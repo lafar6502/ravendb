@@ -33,7 +33,7 @@ namespace Raven.Storage.Esent.StorageActions
 		}
 
 		public JsonDocument DocumentByKey(string key, TransactionInformation transactionInformation)
-		{
+		{	
 			return DocumentByKeyInternal(key, transactionInformation, (metadata, createDocument) =>
 			{
 				Debug.Assert(metadata.Etag != null);
@@ -57,6 +57,7 @@ namespace Raven.Storage.Esent.StorageActions
 		private T DocumentByKeyInternal<T>(string key, TransactionInformation transactionInformation, Func<JsonDocumentMetadata, Func<string, Guid, RavenJObject, RavenJObject>, T> createResult)
 			where T : class
 		{
+			var sw = Stopwatch.StartNew();
 			bool existsInTx = IsDocumentModifiedInsideTransaction(key);
 
 			if (transactionInformation != null && existsInTx)
@@ -108,6 +109,8 @@ namespace Raven.Storage.Esent.StorageActions
 			}
 			var existingEtag = Api.RetrieveColumn(session, Documents, tableColumnsCache.DocumentsColumns["etag"]).TransfromToGuidWithProperSorting();
 			logger.Debug("Document with key '{0}' was found", key);
+			sw.Stop();
+			statLog.Info("GetDocByKeyT:{0}", sw.ElapsedTicks);
 			var lastModifiedInt64 = Api.RetrieveColumnAsInt64(session, Documents, tableColumnsCache.DocumentsColumns["last_modified"]).Value;
 			return createResult(new JsonDocumentMetadata()
 			{
@@ -386,10 +389,10 @@ namespace Raven.Storage.Esent.StorageActions
 		}
 
 		public AddDocumentResult AddDocument(string key, Guid? etag, RavenJObject data, RavenJObject metadata)
-		{
+		{	
 			if (key != null && Encoding.Unicode.GetByteCount(key) >= 2048)
 				throw new ArgumentException(string.Format("The key must be a maximum of 2,048 bytes in Unicode, 1,024 characters, key is: '{0}'", key), "key");
-
+			var sw = Stopwatch.StartNew();
 			Api.JetSetCurrentIndex(session, Documents, "by_key");
 			Api.MakeKey(session, Documents, key, Encoding.Unicode, MakeKeyGrbit.NewKey);
 			var isUpdate = Api.TrySeek(session, Documents, SeekGrbit.SeekEQ);
@@ -447,6 +450,8 @@ namespace Raven.Storage.Esent.StorageActions
 
 				update.Save();
 			}
+			sw.Stop();
+			statLog.Info("AddDocumentT:{0}", sw.ElapsedTicks);
 
 			logger.Debug("Inserted a new document with key '{0}', update: {1}, ",
 							   key, isUpdate);
@@ -464,6 +469,7 @@ namespace Raven.Storage.Esent.StorageActions
 		{
 			var prep = JET_prep.Insert;
 			bool isUpdate = false;
+			var sw = Stopwatch.StartNew();
 			if (checkForUpdates)
 			{
 				Api.JetSetCurrentIndex(session, Documents, "by_key");
@@ -505,7 +511,8 @@ namespace Raven.Storage.Esent.StorageActions
 				}
 
 				update.Save();
-
+				sw.Stop();
+				statLog.Info("InsertDocumentT:{0}", sw.ElapsedTicks);
 				return new AddDocumentResult
 				{
 					Etag = newEtag,
@@ -517,6 +524,7 @@ namespace Raven.Storage.Esent.StorageActions
 
 		public Guid AddDocumentInTransaction(string key, Guid? etag, RavenJObject data, RavenJObject metadata, TransactionInformation transactionInformation)
 		{
+			var sw = Stopwatch.StartNew();
 			Api.JetSetCurrentIndex(session, Documents, "by_key");
 			Api.MakeKey(session, Documents, key, Encoding.Unicode, MakeKeyGrbit.NewKey);
 			var isUpdate = Api.TrySeek(session, Documents, SeekGrbit.SeekEQ);
@@ -577,6 +585,8 @@ namespace Raven.Storage.Esent.StorageActions
 
 				update.Save();
 			}
+			sw.Stop();
+			statLog.Info("AddDocumentInTranT:{0}", sw.ElapsedTicks);
 			logger.Debug("Inserted a new document with key '{0}', update: {1}, in transaction: {2}",
 							   key, isUpdate, transactionInformation.Id);
 
@@ -586,6 +596,7 @@ namespace Raven.Storage.Esent.StorageActions
 
 		public bool DeleteDocument(string key, Guid? etag, out RavenJObject metadata, out Guid? deletedETag)
 		{
+			var sw = Stopwatch.StartNew();
 			metadata = null;
 			Api.JetSetCurrentIndex(session, Documents, "by_key");
 			Api.MakeKey(session, Documents, key, Encoding.Unicode, MakeKeyGrbit.NewKey);
@@ -606,15 +617,17 @@ namespace Raven.Storage.Esent.StorageActions
 
 			Api.JetDelete(session, Documents);
 			logger.Debug("Document with key '{0}' was deleted", key);
-
 			cacher.RemoveCachedDocument(key, existingEtag);
-
+			sw.Stop();
+			statLog.Info("DeleteT:{0}", sw.ElapsedTicks);
+			
 			return true;
 		}
 
 
 		public bool DeleteDocumentInTransaction(TransactionInformation transactionInformation, string key, Guid? etag)
 		{
+			var sw = Stopwatch.StartNew();
 			Api.JetSetCurrentIndex(session, Documents, "by_key");
 			Api.MakeKey(session, Documents, key, Encoding.Unicode, MakeKeyGrbit.NewKey);
 			if (Api.TrySeek(session, Documents, SeekGrbit.SeekEQ) == false)
@@ -665,7 +678,9 @@ namespace Raven.Storage.Esent.StorageActions
 
 				update.Save();
 			}
-
+			sw.Stop();
+			statLog.Info("DeleteInTranT:{0}", sw.ElapsedTicks);
+			
 			return true;
 		}
 	}

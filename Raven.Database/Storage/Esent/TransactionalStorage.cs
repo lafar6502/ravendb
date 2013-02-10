@@ -45,7 +45,8 @@ namespace Raven.Storage.Esent
 		private readonly IDocumentCacher documentCacher;
 
 		private static readonly ILog log = LogManager.GetCurrentClassLogger();
-
+		protected static readonly ILog statLog = LogManager.GetLogger("PERFM.EsentTS");
+		
 		[ImportMany]
 		public OrderedPartCollection<ISchemaUpdate> Updaters { get; set; }
 
@@ -509,6 +510,7 @@ namespace Raven.Storage.Esent
 					return;
 				}
 			}
+			var sw = Stopwatch.StartNew();
 			Action afterStorageCommit = null;
 			disposerLock.EnterReadLock();
 			try
@@ -538,6 +540,8 @@ namespace Raven.Storage.Esent
 				disposerLock.ExitReadLock();
 				if (disposed == false)
 					current.Value = null;
+				sw.Stop();
+				statLog.Info("Batch:{0}", sw.ElapsedMilliseconds);
 			}
 			if (afterStorageCommit != null)
 				afterStorageCommit(); 

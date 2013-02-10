@@ -49,6 +49,7 @@ using BitConverter = System.BitConverter;
 using Index = Raven.Database.Indexing.Index;
 using Task = System.Threading.Tasks.Task;
 using TransactionInformation = Raven.Abstractions.Data.TransactionInformation;
+using System.Diagnostics;
 
 namespace Raven.Database
 {
@@ -145,14 +146,16 @@ namespace Raven.Database
 		private readonly object idleLocker = new object();
 
 		private static readonly ILog log = LogManager.GetCurrentClassLogger();
-
+		private readonly ILog statLog;
+		
 		private readonly SizeLimitedConcurrentDictionary<string, TouchedDocumentInfo> recentTouches =
 			new SizeLimitedConcurrentDictionary<string, TouchedDocumentInfo>(1024, StringComparer.InvariantCultureIgnoreCase);
 
 		public DocumentDatabase(InMemoryRavenConfiguration configuration)
 		{
 			this.configuration = configuration;
-
+			statLog = LogManager.GetLogger(string.Format("PERFM.DB.{0}", configuration.DatabaseName));
+			
 			using (LogManager.OpenMappedContext("database", configuration.DatabaseName ?? Constants.SystemDatabase))
 			{
 				if (configuration.IsTenantDatabase == false)
@@ -872,6 +875,7 @@ namespace Raven.Database
 
 		public bool Delete(string key, Guid? etag, TransactionInformation transactionInformation, out RavenJObject metadata)
 		{
+			var sw = Stopwatch.StartNew();
 			if (key == null)
 				throw new ArgumentNullException("key");
 			key = key.Trim();
@@ -942,7 +946,8 @@ namespace Raven.Database
 					}
 					workContext.ShouldNotifyAboutWork(() => "DEL " + key);
 				});
-
+				sw.Stop();
+				statLog.Info("Delete:{0}", sw.ElapsedMilliseconds);
 				metadata = metadataVar;
 				return deleted;
 			}
@@ -960,6 +965,7 @@ namespace Raven.Database
 
 		public void Commit(Guid txId)
 		{
+			var sw = Stopwatch.StartNew();
 			try
 			{
 				lock (putSerialLock)
@@ -982,6 +988,8 @@ namespace Raven.Database
 					});
 				}
 				TryCompletePromotedTransaction(txId);
+				sw.Stop();
+				statLog.Info("Commit:{0}", sw.ElapsedMilliseconds);
 			}
 			catch (Exception e)
 			{
@@ -1128,6 +1136,7 @@ namespace Raven.Database
 
 		public QueryResultWithIncludes Query(string index, IndexQuery query)
 		{
+			var sw = Stopwatch.StartNew();
 			index = IndexDefinitionStorage.FixupIndexName(index);
 			var list = new List<RavenJObject>();
 			var highlightings = new Dictionary<string, Dictionary<string, string[]>>();
@@ -1214,6 +1223,9 @@ namespace Raven.Database
 						throw new InvalidOperationException("The transform results function failed.\r\n" + string.Join("\r\n", transformerErrors));
 					}
 				});
+			sw.Stop();
+			statLog.Info("Query:{0}", sw.ElapsedMilliseconds);
+			statLog.Info("Query_{1}:{0}", sw.ElapsedMilliseconds, index);
 			return new QueryResultWithIncludes
 			{
 				IndexName = index,

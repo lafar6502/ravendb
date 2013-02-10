@@ -33,6 +33,7 @@ namespace Raven.Storage.Esent.StorageActions
 		protected readonly JET_DBID dbid;
 
 		protected static readonly ILog logger = LogManager.GetCurrentClassLogger();
+		protected readonly ILog statLog;
 		protected readonly Session session;
 		private Transaction transaction;
 		private bool useLazyCommit;
@@ -58,6 +59,7 @@ namespace Raven.Storage.Esent.StorageActions
 			IDocumentCacher cacher,
 			TransactionalStorage transactionalStorage)
 		{
+			this.statLog = LogManager.GetLogger("PERFM.DS_" + database);
 			this.tableColumnsCache = tableColumnsCache;
 			this.documentCodecs = documentCodecs;
 			this.uuidGenerator = uuidGenerator;

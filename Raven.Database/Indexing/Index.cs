@@ -47,6 +47,8 @@ namespace Raven.Database.Indexing
 	{
 		protected static readonly ILog logIndexing = LogManager.GetLogger(typeof(Index).FullName + ".Indexing");
 		protected static readonly ILog logQuerying = LogManager.GetLogger(typeof(Index).FullName + ".Querying");
+		protected static readonly ILog perfLog = LogManager.GetLogger("PERFM.Index");
+		
 		private readonly List<Document> currentlyIndexDocuments = new List<Document>();
 		private Directory directory;
 		protected readonly IndexDefinition indexDefinition;
@@ -117,6 +119,16 @@ namespace Raven.Database.Indexing
 			indexingPerformanceStats.Enqueue(stats);
 			if (indexingPerformanceStats.Count > 25)
 				indexingPerformanceStats.TryDequeue(out stats);
+			if (stats.Operation.StartsWith("Reduce"))
+			{
+				perfLog.Info("Reduce.{0}.InputCount:{1}", name, stats.InputCount);
+				perfLog.Info("Reduce.{0}.Duration:{1}", name, (int) stats.Duration.TotalMilliseconds);
+			}
+			else
+			{
+				perfLog.Info("Map.{0}.InputCount:{1}", name, stats.InputCount);
+				perfLog.Info("Map.{0}.Duration:{1}", name, (int) stats.Duration.TotalMilliseconds);
+			}
 		}
 
 		public void Dispose()

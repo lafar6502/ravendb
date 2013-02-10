@@ -1,0 +1,2013 @@
+C:\devgit\ravendb>build
+All packages listed in packages.config are already installed.
+psake version 4.2.0
+Copyright (c) 2010 James Kovacs
+
+Executing Stable
+Executing Verify40
+Executing Clean
+Executing Init
+Executing Compile
+Microsoft (R) Build Engine Version 4.0.30319.1
+[Microsoft .NET Framework, Version 4.0.30319.269]
+Copyright (C) Microsoft Corporation 2007. All rights reserved.
+
+Build started 2013-02-10 09:22:00.
+Project "C:\devgit\ravendb\Utilities\Raven.ProjectRewriter\Raven.ProjectRewrite
+r.csproj" on node 1 (default targets).
+ResolveAssemblyReferences:
+  A TargetFramework profile exclusion list will be generated.
+GenerateTargetFrameworkMonikerAttribute:
+Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output fi
+les are up-to-date with respect to the input files.
+CoreCompile:
+  c:\Windows\Microsoft.NET\Framework\v4.0.30319\Csc.exe /noconfig /nowarn:1701,
+  1702 /nostdlib+ /platform:x86 /errorreport:prompt /warn:4 /define:DEBUG;TRACE
+   /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\
+  .NETFramework\v4.0\Profile\Client\Microsoft.CSharp.dll" /reference:"C:\Progra
+  m Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Pro
+  file\Client\mscorlib.dll" /reference:"C:\Program Files (x86)\Reference Assemb
+  lies\Microsoft\Framework\.NETFramework\v4.0\Profile\Client\System.Core.dll" /
+  reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.N
+  ETFramework\v4.0\Profile\Client\System.Data.DataSetExtensions.dll" /reference
+  :"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramewo
+  rk\v4.0\Profile\Client\System.Data.dll" /reference:"C:\Program Files (x86)\Re
+  ference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Profile\Client\Syst
+  em.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Fra
+  mework\.NETFramework\v4.0\Profile\Client\System.Xml.dll" /reference:"C:\Progr
+  am Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Pr
+  ofile\Client\System.Xml.Linq.dll" /debug+ /debug:full /filealign:512 /optimiz
+  e- /out:obj\x86\Debug\Raven.ProjectRewriter.exe /target:exe ..\..\CommonAssem
+  blyInfo.cs Program.cs "C:\Users\rg\AppData\Local\Temp\.NETFramework,Version=v
+  4.0,Profile=Client.AssemblyAttributes.cs"
+CopyFilesToOutputDirectory:
+  Copying file from "obj\x86\Debug\Raven.ProjectRewriter.exe" to "C:\devgit\rav
+  endb\build\\Raven.ProjectRewriter.exe".
+  Raven.ProjectRewriter -> C:\devgit\ravendb\build\Raven.ProjectRewriter.exe
+  Copying file from "obj\x86\Debug\Raven.ProjectRewriter.pdb" to "C:\devgit\rav
+  endb\build\\Raven.ProjectRewriter.pdb".
+StyleCop:
+  Excluding
+  No violations encountered
+Done Building Project "C:\devgit\ravendb\Utilities\Raven.ProjectRewriter\Raven.
+ProjectRewriter.csproj" (default targets).
+
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.66
+C:\devgit\ravendb\..\BuildsInfo\RavenDB\Settings.dat
+Compiling with 'Release' configuration
+Microsoft (R) Build Engine Version 4.0.30319.1
+[Microsoft .NET Framework, Version 4.0.30319.269]
+Copyright (C) Microsoft Corporation 2007. All rights reserved.
+
+Build started 2013-02-10 09:22:01.
+Project "C:\devgit\ravendb\zzz_RavenDB_Release.sln" on node 1 (default targets)
+.
+ValidateSolutionConfiguration:
+  Building solution configuration "Release|Mixed Platforms".
+Project "C:\devgit\ravendb\zzz_RavenDB_Release.sln" (1) is building "C:\devgit\
+ravendb\Raven.Server\Raven.Server.csproj" (2) on node 1 (default targets).
+RestorePackages:
+  "C:\devgit\ravendb\.nuget\nuget.exe" install "C:\devgit\ravendb\Raven.Server\
+  packages.config" -source ""  -RequireConsent -o "C:\devgit\ravendb\packages"
+  All packages listed in packages.config are already installed.
+Project "C:\devgit\ravendb\Raven.Server\Raven.Server.csproj" (2) is building "C
+:\devgit\ravendb\Raven.Abstractions\Raven.Abstractions.csproj" (4) on node 1 (d
+efault targets).
+ResolveAssemblyReferences:
+  A TargetFramework profile exclusion list will be generated.
+GenerateTargetFrameworkMonikerAttribute:
+Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output fi
+les are up-to-date with respect to the input files.
+CoreCompile:
+  c:\Windows\Microsoft.NET\Framework\v4.0.30319\Csc.exe /noconfig /nowarn:"1591
+   1573",1701,1702 /nostdlib+ /errorreport:prompt /warn:4 /doc:bin\Release\Rave
+  n.Abstractions.xml /define:TRACE /reference:"C:\Program Files (x86)\Reference
+   Assemblies\Microsoft\Framework\.NETFramework\v4.0\Profile\Client\Microsoft.C
+  Sharp.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\
+  Framework\.NETFramework\v4.0\Profile\Client\mscorlib.dll" /reference:"C:\Prog
+  ram Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\P
+  rofile\Client\System.ComponentModel.Composition.dll" /reference:"C:\Program F
+  iles (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Profil
+  e\Client\System.Configuration.dll" /reference:"C:\Program Files (x86)\Referen
+  ce Assemblies\Microsoft\Framework\.NETFramework\v4.0\Profile\Client\System.Co
+  re.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Fra
+  mework\.NETFramework\v4.0\Profile\Client\System.Data.DataSetExtensions.dll" /
+  reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.N
+  ETFramework\v4.0\Profile\Client\System.Data.dll" /reference:"C:\Program Files
+   (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Profile\Cl
+  ient\System.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Micr
+  osoft\Framework\.NETFramework\v4.0\Profile\Client\System.Runtime.Serializatio
+  n.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Fram
+  ework\.NETFramework\v4.0\Profile\Client\System.ServiceModel.dll" /reference:"
+  C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework
+  \v4.0\Profile\Client\System.Xml.dll" /reference:"C:\Program Files (x86)\Refer
+  ence Assemblies\Microsoft\Framework\.NETFramework\v4.0\Profile\Client\System.
+  Xml.Linq.dll" /debug:pdbonly /filealign:512 /keyfile:..\Raven.Database\RavenD
+  B.snk /optimize+ /out:obj\Release\Raven.Abstractions.dll /resource:..\Imports
+  \Newtonsoft.Json\Src\Newtonsoft.Json\Dynamic.snk,Raven.Abstractions.Imports.N
+  ewtonsoft.Json.Dynamic.snk /target:library ..\CommonAssemblyInfo.cs Commands\
+  ScriptedPatchCommandData.cs ..\Imports\Newtonsoft.Json\Src\Newtonsoft.Json\Bs
+  on\BsonBinaryType.cs ..\Imports\Newtonsoft.Json\Src\Newtonsoft.Json\Bson\Bson
+  BinaryWriter.cs ..\Imports\Newtonsoft.Json\Src\Newtonsoft.Json\Bson\BsonObjec
+  tId.cs ..\Imports\Newtonsoft.Json\Src\Newtonsoft.Json\Bson\BsonReader.cs ..\I
+  mports\Newtonsoft.Json\Src\Newtonsoft.Json\Bson\BsonToken.cs ..\Imports\Newto
+  nsoft.Json\Src\Newtonsoft.Json\Bson\BsonType.cs ..\Imports\Newtonsoft.Json\Sr
+  c\Newtonsoft.Json\Bson\BsonWriter.cs ..\Imports\Newtonsoft.Json\Src\Newtonsof
+  t.Json\ConstructorHandling.cs ..\Imports\Newtonsoft.Json\Src\Newtonsoft.Json\
+  Converters\BinaryConverter.cs ..\Imports\Newtonsoft.Json\Src\Newtonsoft.Json\
+  Converters\BsonObjectIdConverter.cs ..\Imports\Newtonsoft.Json\Src\Newtonsoft
+  .Json\Converters\CustomCreationConverter.cs ..\Imports\Newtonsoft.Json\Src\Ne
+  wtonsoft.Json\Converters\DataSetConverter.cs ..\Imports\Newtonsoft.Json\Src\N
+  ewtonsoft.Json\Converters\DataTableConverter.cs ..\Imports\Newtonsoft.Json\Sr
+  c\Newtonsoft.Json\Converters\DateTimeConverterBase.cs ..\Imports\Newtonsoft.J
+  son\Src\Newtonsoft.Json\Converters\EntityKeyMemberConverter.cs ..\Imports\New
+  tonsoft.Json\Src\Newtonsoft.Json\Converters\ExpandoObjectConverter.cs ..\Impo
+  rts\Newtonsoft.Json\Src\Newtonsoft.Json\Converters\IsoDateTimeConverter.cs ..
+  \Imports\Newtonsoft.Json\Src\Newtonsoft.Json\Converters\JavaScriptDateTimeCon
+  verter.cs ..\Imports\Newtonsoft.Json\Src\Newtonsoft.Json\Converters\KeyValueP
+  airConverter.cs ..\Imports\Newtonsoft.Json\Src\Newtonsoft.Json\Converters\Reg
+  exConverter.cs ..\Imports\Newtonsoft.Json\Src\Newtonsoft.Json\Converters\Stri
+  ngEnumConverter.cs ..\Imports\Newtonsoft.Json\Src\Newtonsoft.Json\Converters\
+  VersionConverter.cs ..\Imports\Newtonsoft.Json\Src\Newtonsoft.Json\Converters
+  \XmlNodeConverter.cs ..\Imports\Newtonsoft.Json\Src\Newtonsoft.Json\DateForma
+  tHandling.cs ..\Imports\Newtonsoft.Json\Src\Newtonsoft.Json\DateParseHandling
+  .cs ..\Imports\Newtonsoft.Json\Src\Newtonsoft.Json\DateTimeZoneHandling.cs ..
+  \Imports\Newtonsoft.Json\Src\Newtonsoft.Json\DefaultValueHandling.cs ..\Impor
+  ts\Newtonsoft.Json\Src\Newtonsoft.Json\FormatterAssemblyStyle.cs ..\Imports\N
+  ewtonsoft.Json\Src\Newtonsoft.Json\Formatting.cs ..\Imports\Newtonsoft.Json\S
+  rc\Newtonsoft.Json\IJsonLineInfo.cs ..\Imports\Newtonsoft.Json\Src\Newtonsoft
+  .Json\JsonArrayAttribute.cs ..\Imports\Newtonsoft.Json\Src\Newtonsoft.Json\Js
+  onConstructorAttribute.cs ..\Imports\Newtonsoft.Json\Src\Newtonsoft.Json\Json
+  ContainerAttribute.cs ..\Imports\Newtonsoft.Json\Src\Newtonsoft.Json\JsonConv
+  ert.cs ..\Imports\Newtonsoft.Json\Src\Newtonsoft.Json\JsonConverter.cs ..\Imp
+  orts\Newtonsoft.Json\Src\Newtonsoft.Json\JsonConverterAttribute.cs ..\Imports
+  \Newtonsoft.Json\Src\Newtonsoft.Json\JsonConverterCollection.cs ..\Imports\Ne
+  wtonsoft.Json\Src\Newtonsoft.Json\JsonDictionaryAttribute.cs ..\Imports\Newto
+  nsoft.Json\Src\Newtonsoft.Json\JsonException.cs ..\Imports\Newtonsoft.Json\Sr
+  c\Newtonsoft.Json\JsonIgnoreAttribute.cs ..\Imports\Newtonsoft.Json\Src\Newto
+  nsoft.Json\JsonObjectAttribute.cs ..\Imports\Newtonsoft.Json\Src\Newtonsoft.J
+  son\JsonPosition.cs ..\Imports\Newtonsoft.Json\Src\Newtonsoft.Json\JsonProper
+  tyAttribute.cs ..\Imports\Newtonsoft.Json\Src\Newtonsoft.Json\JsonReader.cs .
+  .\Imports\Newtonsoft.Json\Src\Newtonsoft.Json\JsonReaderException.cs ..\Impor
+  ts\Newtonsoft.Json\Src\Newtonsoft.Json\JsonSerializationException.cs ..\Impor
+  ts\Newtonsoft.Json\Src\Newtonsoft.Json\JsonSerializer.cs ..\Imports\Newtonsof
+  t.Json\Src\Newtonsoft.Json\JsonSerializerSettings.cs ..\Imports\Newtonsoft.Js
+  on\Src\Newtonsoft.Json\JsonTextReader.cs ..\Imports\Newtonsoft.Json\Src\Newto
+  nsoft.Json\JsonTextWriter.cs ..\Imports\Newtonsoft.Json\Src\Newtonsoft.Json\J
+  sonToken.cs ..\Imports\Newtonsoft.Json\Src\Newtonsoft.Json\JsonValidatingRead
+  er.cs ..\Imports\Newtonsoft.Json\Src\Newtonsoft.Json\JsonWriter.cs ..\Imports
+  \Newtonsoft.Json\Src\Newtonsoft.Json\JsonWriterException.cs ..\Imports\Newton
+  soft.Json\Src\Newtonsoft.Json\Linq\Extensions.cs ..\Imports\Newtonsoft.Json\S
+  rc\Newtonsoft.Json\Linq\IJEnumerable.cs ..\Imports\Newtonsoft.Json\Src\Newton
+  soft.Json\Linq\JArray.cs ..\Imports\Newtonsoft.Json\Src\Newtonsoft.Json\Linq\
+  JConstructor.cs ..\Imports\Newtonsoft.Json\Src\Newtonsoft.Json\Linq\JContaine
+  r.cs ..\Imports\Newtonsoft.Json\Src\Newtonsoft.Json\Linq\JEnumerable.cs ..\Im
+  ports\Newtonsoft.Json\Src\Newtonsoft.Json\Linq\JObject.cs ..\Imports\Newtonso
+  ft.Json\Src\Newtonsoft.Json\Linq\JPath.cs ..\Imports\Newtonsoft.Json\Src\Newt
+  onsoft.Json\Linq\JProperty.cs ..\Imports\Newtonsoft.Json\Src\Newtonsoft.Json\
+  Linq\JPropertyDescriptor.cs ..\Imports\Newtonsoft.Json\Src\Newtonsoft.Json\Li
+  nq\JPropertyKeyedCollection.cs ..\Imports\Newtonsoft.Json\Src\Newtonsoft.Json
+  \Linq\JRaw.cs ..\Imports\Newtonsoft.Json\Src\Newtonsoft.Json\Linq\JToken.cs .
+  .\Imports\Newtonsoft.Json\Src\Newtonsoft.Json\Linq\JTokenEqualityComparer.cs
+  ..\Imports\Newtonsoft.Json\Src\Newtonsoft.Json\Linq\JTokenReader.cs ..\Import
+  s\Newtonsoft.Json\Src\Newtonsoft.Json\Linq\JTokenType.cs ..\Imports\Newtonsof
+  t.Json\Src\Newtonsoft.Json\Linq\JTokenWriter.cs ..\Imports\Newtonsoft.Json\Sr
+  c\Newtonsoft.Json\Linq\JValue.cs ..\Imports\Newtonsoft.Json\Src\Newtonsoft.Js
+  on\MemberSerialization.cs ..\Imports\Newtonsoft.Json\Src\Newtonsoft.Json\Miss
+  ingMemberHandling.cs ..\Imports\Newtonsoft.Json\Src\Newtonsoft.Json\NullValue
+  Handling.cs ..\Imports\Newtonsoft.Json\Src\Newtonsoft.Json\ObjectCreationHand
+  ling.cs ..\Imports\Newtonsoft.Json\Src\Newtonsoft.Json\PreserveReferencesHand
+  ling.cs ..\Imports\Newtonsoft.Json\Src\Newtonsoft.Json\ReferenceLoopHandling.
+  cs ..\Imports\Newtonsoft.Json\Src\Newtonsoft.Json\Required.cs ..\Imports\Newt
+  onsoft.Json\Src\Newtonsoft.Json\Schema\Extensions.cs ..\Imports\Newtonsoft.Js
+  on\Src\Newtonsoft.Json\Schema\JsonSchema.cs ..\Imports\Newtonsoft.Json\Src\Ne
+  wtonsoft.Json\Schema\JsonSchemaBuilder.cs ..\Imports\Newtonsoft.Json\Src\Newt
+  onsoft.Json\Schema\JsonSchemaConstants.cs ..\Imports\Newtonsoft.Json\Src\Newt
+  onsoft.Json\Schema\JsonSchemaException.cs ..\Imports\Newtonsoft.Json\Src\Newt
+  onsoft.Json\Schema\JsonSchemaGenerator.cs ..\Imports\Newtonsoft.Json\Src\Newt
+  onsoft.Json\Schema\JsonSchemaModel.cs ..\Imports\Newtonsoft.Json\Src\Newtonso
+  ft.Json\Schema\JsonSchemaModelBuilder.cs ..\Imports\Newtonsoft.Json\Src\Newto
+  nsoft.Json\Schema\JsonSchemaNode.cs ..\Imports\Newtonsoft.Json\Src\Newtonsoft
+  .Json\Schema\JsonSchemaNodeCollection.cs ..\Imports\Newtonsoft.Json\Src\Newto
+  nsoft.Json\Schema\JsonSchemaResolver.cs ..\Imports\Newtonsoft.Json\Src\Newton
+  soft.Json\Schema\JsonSchemaType.cs ..\Imports\Newtonsoft.Json\Src\Newtonsoft.
+  Json\Schema\JsonSchemaWriter.cs ..\Imports\Newtonsoft.Json\Src\Newtonsoft.Jso
+  n\Schema\UndefinedSchemaIdHandling.cs ..\Imports\Newtonsoft.Json\Src\Newtonso
+  ft.Json\Schema\ValidationEventArgs.cs ..\Imports\Newtonsoft.Json\Src\Newtonso
+  ft.Json\Schema\ValidationEventHandler.cs ..\Imports\Newtonsoft.Json\Src\Newto
+  nsoft.Json\SerializationBinder.cs ..\Imports\Newtonsoft.Json\Src\Newtonsoft.J
+  son\Serialization\CachedAttributeGetter.cs ..\Imports\Newtonsoft.Json\Src\New
+  tonsoft.Json\Serialization\CamelCasePropertyNamesContractResolver.cs ..\Impor
+  ts\Newtonsoft.Json\Src\Newtonsoft.Json\Serialization\DefaultContractResolver.
+  cs ..\Imports\Newtonsoft.Json\Src\Newtonsoft.Json\Serialization\DefaultRefere
+  nceResolver.cs ..\Imports\Newtonsoft.Json\Src\Newtonsoft.Json\Serialization\D
+  efaultSerializationBinder.cs ..\Imports\Newtonsoft.Json\Src\Newtonsoft.Json\S
+  erialization\DynamicValueProvider.cs ..\Imports\Newtonsoft.Json\Src\Newtonsof
+  t.Json\Serialization\ErrorContext.cs ..\Imports\Newtonsoft.Json\Src\Newtonsof
+  t.Json\Serialization\ErrorEventArgs.cs ..\Imports\Newtonsoft.Json\Src\Newtons
+  oft.Json\Serialization\IContractResolver.cs ..\Imports\Newtonsoft.Json\Src\Ne
+  wtonsoft.Json\Serialization\IReferenceResolver.cs ..\Imports\Newtonsoft.Json\
+  Src\Newtonsoft.Json\Serialization\IValueProvider.cs ..\Imports\Newtonsoft.Jso
+  n\Src\Newtonsoft.Json\Serialization\JsonArrayContract.cs ..\Imports\Newtonsof
+  t.Json\Src\Newtonsoft.Json\Serialization\JsonContainerContract.cs ..\Imports\
+  Newtonsoft.Json\Src\Newtonsoft.Json\Serialization\JsonContract.cs ..\Imports\
+  Newtonsoft.Json\Src\Newtonsoft.Json\Serialization\JsonDictionaryContract.cs .
+  .\Imports\Newtonsoft.Json\Src\Newtonsoft.Json\Serialization\JsonDynamicContra
+  ct.cs ..\Imports\Newtonsoft.Json\Src\Newtonsoft.Json\Serialization\JsonFormat
+  terConverter.cs ..\Imports\Newtonsoft.Json\Src\Newtonsoft.Json\Serialization\
+  JsonISerializableContract.cs ..\Imports\Newtonsoft.Json\Src\Newtonsoft.Json\S
+  erialization\JsonLinqContract.cs ..\Imports\Newtonsoft.Json\Src\Newtonsoft.Js
+  on\Serialization\JsonObjectContract.cs ..\Imports\Newtonsoft.Json\Src\Newtons
+  oft.Json\Serialization\JsonPrimitiveContract.cs ..\Imports\Newtonsoft.Json\Sr
+  c\Newtonsoft.Json\Serialization\JsonProperty.cs ..\Imports\Newtonsoft.Json\Sr
+  c\Newtonsoft.Json\Serialization\JsonPropertyCollection.cs ..\Imports\Newtonso
+  ft.Json\Src\Newtonsoft.Json\Serialization\JsonSerializerInternalBase.cs ..\Im
+  ports\Newtonsoft.Json\Src\Newtonsoft.Json\Serialization\JsonSerializerInterna
+  lReader.cs ..\Imports\Newtonsoft.Json\Src\Newtonsoft.Json\Serialization\JsonS
+  erializerInternalWriter.cs ..\Imports\Newtonsoft.Json\Src\Newtonsoft.Json\Ser
+  ialization\JsonSerializerProxy.cs ..\Imports\Newtonsoft.Json\Src\Newtonsoft.J
+  son\Serialization\JsonStringContract.cs ..\Imports\Newtonsoft.Json\Src\Newton
+  soft.Json\Serialization\JsonTypeReflector.cs ..\Imports\Newtonsoft.Json\Src\N
+  ewtonsoft.Json\Serialization\LateBoundMetadataTypeAttribute.cs ..\Imports\New
+  tonsoft.Json\Src\Newtonsoft.Json\Serialization\ObjectConstructor.cs ..\Import
+  s\Newtonsoft.Json\Src\Newtonsoft.Json\Serialization\OnErrorAttribute.cs ..\Im
+  ports\Newtonsoft.Json\Src\Newtonsoft.Json\Serialization\ReflectionValueProvid
+  er.cs ..\Imports\Newtonsoft.Json\Src\Newtonsoft.Json\StreamingContext.cs ..\I
+  mports\Newtonsoft.Json\Src\Newtonsoft.Json\TypeNameHandling.cs ..\Imports\New
+  tonsoft.Json\Src\Newtonsoft.Json\Utilities\Base64Encoder.cs ..\Imports\Newton
+  soft.Json\Src\Newtonsoft.Json\Utilities\BidirectionalDictionary.cs ..\Imports
+  \Newtonsoft.Json\Src\Newtonsoft.Json\Utilities\CollectionUtils.cs ..\Imports\
+  Newtonsoft.Json\Src\Newtonsoft.Json\Utilities\CollectionWrapper.cs ..\Imports
+  \Newtonsoft.Json\Src\Newtonsoft.Json\Utilities\ConvertUtils.cs ..\Imports\New
+  tonsoft.Json\Src\Newtonsoft.Json\Utilities\DateTimeUtils.cs ..\Imports\Newton
+  soft.Json\Src\Newtonsoft.Json\Utilities\DictionaryWrapper.cs ..\Imports\Newto
+  nsoft.Json\Src\Newtonsoft.Json\Utilities\DynamicProxy.cs ..\Imports\Newtonsof
+  t.Json\Src\Newtonsoft.Json\Utilities\DynamicProxyMetaObject.cs ..\Imports\New
+  tonsoft.Json\Src\Newtonsoft.Json\Utilities\DynamicReflectionDelegateFactory.c
+  s ..\Imports\Newtonsoft.Json\Src\Newtonsoft.Json\Utilities\DynamicUtils.cs ..
+  \Imports\Newtonsoft.Json\Src\Newtonsoft.Json\Utilities\DynamicWrapper.cs ..\I
+  mports\Newtonsoft.Json\Src\Newtonsoft.Json\Utilities\EnumUtils.cs ..\Imports\
+  Newtonsoft.Json\Src\Newtonsoft.Json\Utilities\EnumValue.cs ..\Imports\Newtons
+  oft.Json\Src\Newtonsoft.Json\Utilities\EnumValues.cs ..\Imports\Newtonsoft.Js
+  on\Src\Newtonsoft.Json\Utilities\ILGeneratorExtensions.cs ..\Imports\Newtonso
+  ft.Json\Src\Newtonsoft.Json\Utilities\JavaScriptUtils.cs ..\Imports\Newtonsof
+  t.Json\Src\Newtonsoft.Json\Utilities\LateBoundReflectionDelegateFactory.cs ..
+  \Imports\Newtonsoft.Json\Src\Newtonsoft.Json\Utilities\LinqBridge.cs ..\Impor
+  ts\Newtonsoft.Json\Src\Newtonsoft.Json\Utilities\ListWrapper.cs ..\Imports\Ne
+  wtonsoft.Json\Src\Newtonsoft.Json\Utilities\MathUtils.cs ..\Imports\Newtonsof
+  t.Json\Src\Newtonsoft.Json\Utilities\MethodCall.cs ..\Imports\Newtonsoft.Json
+  \Src\Newtonsoft.Json\Utilities\MiscellaneousUtils.cs ..\Imports\Newtonsoft.Js
+  on\Src\Newtonsoft.Json\Utilities\ReflectionDelegateFactory.cs ..\Imports\Newt
+  onsoft.Json\Src\Newtonsoft.Json\Utilities\ReflectionUtils.cs ..\Imports\Newto
+  nsoft.Json\Src\Newtonsoft.Json\Utilities\StringBuffer.cs ..\Imports\Newtonsof
+  t.Json\Src\Newtonsoft.Json\Utilities\StringReference.cs ..\Imports\Newtonsoft
+  .Json\Src\Newtonsoft.Json\Utilities\StringUtils.cs ..\Imports\Newtonsoft.Json
+  \Src\Newtonsoft.Json\Utilities\ThreadSafeStore.cs ..\Imports\Newtonsoft.Json\
+  Src\Newtonsoft.Json\Utilities\TypeExtensions.cs ..\Imports\Newtonsoft.Json\Sr
+  c\Newtonsoft.Json\Utilities\ValidationUtils.cs ..\Imports\Newtonsoft.Json\Src
+  \Newtonsoft.Json\WriteState.cs Commands\DeleteCommandData.cs Commands\PatchCo
+  mmandData.cs Commands\PutCommandData.cs Connection\CountingStream.cs Connecti
+  on\HttpRavenRequest.cs Connection\HttpRavenRequestFactory.cs Connection\HttpR
+  equestHelper.cs Connection\OAuthHelper.cs Connection\WebRequestEventArgs.cs C
+  onnection\WebResponseExtensions.cs Data\Alert.cs Data\AlertsDocument.cs Data\
+  ApiKeyDefinition.cs Data\HighlightedField.cs Data\BulkInsertOptions.cs Data\M
+  oreLikeThisQueryResult.cs Data\PeriodicBackupSetup.cs Data\RestoreStatus.cs D
+  ata\ScriptedPatchRequest.cs Data\AggregationOperation.cs Data\AggregationOper
+  ationExtensions.cs Data\Attachment.cs Data\BackupStatus.cs Data\BatchResult.c
+  s Data\BoostedValue.cs Data\BuildNumber.cs Data\ChangeNotification.cs Data\Co
+  nnectionStringParser.cs Data\Constants.cs Data\FacetTermSortMode.cs Data\Face
+  tResults.cs Data\FacetResult.cs Data\DatabaseDocument.cs Data\DatabaseStatist
+  ics.cs Commands\ICommandData.cs Data\EnumerableExtension.cs Data\FacetMode.cs
+   Data\Facet.cs Data\FacetSetup.cs Data\FacetValue.cs Data\GetRequest.cs Data\
+  GetResponse.cs Data\IJsonDocumentMetadata.cs Data\IndexStats.cs Data\JsonDocu
+  ment.cs Data\JsonDocumentMetadata.cs Data\LicensingStatus.cs Data\LogItem.cs
+  Data\MoreLikeThisQuery.cs Data\MultiLoadResult.cs Data\PatchCommandType.cs Da
+  ta\PatchRequest.cs Data\PatchResult.cs Data\PutResult.cs Data\ServerError.cs
+  Data\SetupDoc.cs Data\SortedField.cs Data\SpatialIndexQuery.cs Data\StopWords
+  Setup.cs Data\StringDistanceTypes.cs Data\SuggestionQuery.cs Data\SuggestionQ
+  ueryResult.cs Data\TransactionInformation.cs Data\TransactionMode.cs Extensio
+  ns\AttachmentExtensions.cs Extensions\CryptoTransformExtensions.cs Extensions
+  \ExceptionExtensions.cs Exceptions\ConcurrencyException.cs Extensions\Buffers
+  .cs Extensions\ConcurrentDictionaryExtensions.cs Extensions\Internal\Dictiona
+  ryExtensions.cs Extensions\DisposableAction.cs Extensions\ExpressionExtension
+  s.cs Extensions\JsonDocumentExtensions.cs Extensions\JsonExtensions.cs Defaul
+  t.cs Extensions\ListExtensions.cs Extensions\TaskExtensions.cs Indexing\Field
+  TermVector.cs Indexing\SpatialOptions.cs Indexing\SuggestionOptions.cs Json\C
+  onflictsResolver.cs Json\JsonDictionaryDateTimeKeysConverter.cs Json\JsonDate
+  TimeISO8601Converter.cs Json\JsonFloatConverter.cs Json\Linq\DictionaryWithPa
+  rentSnapshot.cs Json\Linq\Extensions.cs Json\Linq\RavenJArray.cs Json\Linq\Ra
+  venJObject.cs Json\Linq\RavenJPath.cs Json\Linq\RavenJsonConvert.cs Json\Linq
+  \RavenJToken.cs Json\Linq\RavenJTokenEqualityComparer.cs Json\Linq\RavenJToke
+  nReader.cs Json\Linq\RavenJTokenWriter.cs Json\Linq\RavenJValue.cs Json\Raven
+  JsonConverter.cs Json\RavenJsonTextReader.cs Json\Utilities\MathUtils.cs Json
+  \Utilities\MiscellaneousUtils.cs Json\Utilities\StringUtils.cs Linq\DynamicLi
+  st.cs Linq\DynamicNullObject.cs Logging\ILog.cs Logging\ILogExtensions.cs Log
+  ging\ILogManager.cs Logging\LoggerExecutionWrapper.cs Logging\LogLevel.cs Log
+  ging\LogManager.cs Logging\LogProviders\Log4NetLogManager.cs Logging\LogProvi
+  ders\LogManagerBase.cs Logging\LogProviders\NLogLogManager.cs MEF\IPartMetada
+  ta.cs MEF\OrderedPartCollection.cs Json\JsonDateTimeOffsetConverter.cs Json\J
+  sonMultiDimensionalArrayConverter.cs Json\JsonToJsonConverter.cs Extensions\M
+  etadataExtensions.cs Extensions\Reference.cs Extensions\StreamExtensions.cs I
+  ndexing\FieldIndexing.cs Indexing\FieldStorage.cs Indexing\IndexDefinition.cs
+   Indexing\NumberUtil.cs Data\IndexQuery.cs Json\DynamicUtil.cs Json\JsonDynam
+  icConverter.cs Json\JsonEnumConverter.cs Json\JsonNumericConverter.cs Json\JT
+  okenExtensions.cs Linq\DateTools.cs Linq\DynamicJsonObject.cs MEF\PartMetadat
+  a.cs Data\QueryResult.cs Indexing\SortOptions.cs OAuth\AbstractAuthenticator.
+  cs OAuth\SecuredAuthenticator.cs Replication\ReplicationDestination.cs Replic
+  ation\ReplicationDocument.cs Replication\ReplicationStatistics.cs Smuggler\IS
+  mugglerApi.cs Smuggler\SmugglerAction.cs Smuggler\SmugglerApiBase.cs Smuggler
+  \SmugglerOptions.cs SystemTime.cs Util\AtomicDictionary.cs Util\Base62Util.cs
+   Util\ComparableByteArray.cs Util\CompletedTask.cs Util\ConcurrentSet.cs Util
+  \EasyReaderWriterLock.cs Util\Etag.cs Util\IncludesUtil.cs Util\RavenQuery.cs
+   Util\SizeLimitedConcurrentDictionary.cs Util\SizeLimitedConcurrentSet.cs "C:
+  \Users\rg\AppData\Local\Temp\.NETFramework,Version=v4.0,Profile=Client.Assemb
+  lyAttributes.cs"
+Json\Linq\RavenJTokenEqualityComparer.cs(39,15): warning CS0108: 'Raven.Json.Li
+nq.RavenJTokenEqualityComparer.Equals(object, object)' hides inherited member '
+object.Equals(object, object)'. Use the new keyword if hiding was intended. [C:
+\devgit\ravendb\Raven.Abstractions\Raven.Abstractions.csproj]
+Json\Linq\RavenJObject.cs(23,37): warning CS3008: Identifier 'Raven.Json.Linq.R
+avenJObject.__ExternalState' is not CLS-compliant [C:\devgit\ravendb\Raven.Abst
+ractions\Raven.Abstractions.csproj]
+CopyFilesToOutputDirectory:
+  Copying file from "obj\Release\Raven.Abstractions.dll" to "C:\devgit\ravendb\
+  build\\Raven.Abstractions.dll".
+  Raven.Abstractions -> C:\devgit\ravendb\build\Raven.Abstractions.dll
+  Copying file from "obj\Release\Raven.Abstractions.pdb" to "C:\devgit\ravendb\
+  build\\Raven.Abstractions.pdb".
+  Copying file from "bin\Release\Raven.Abstractions.xml" to "C:\devgit\ravendb\
+  build\\Raven.Abstractions.xml".
+Done Building Project "C:\devgit\ravendb\Raven.Abstractions\Raven.Abstractions.
+csproj" (default targets).
+
+Project "C:\devgit\ravendb\Raven.Server\Raven.Server.csproj" (2) is building "C
+:\devgit\ravendb\Raven.Database\Raven.Database.csproj" (5) on node 1 (default t
+argets).
+RestorePackages:
+  "C:\devgit\ravendb\.nuget\nuget.exe" install "C:\devgit\ravendb\Raven.Databas
+  e\packages.config" -source ""  -RequireConsent -o "C:\devgit\ravendb\packages
+  "
+  All packages listed in packages.config are already installed.
+Project "C:\devgit\ravendb\Raven.Database\Raven.Database.csproj" (5) is buildin
+g "C:\devgit\ravendb\Raven.Studio\Raven.Studio.csproj" (6) on node 1 (default t
+argets).
+C:\devgit\ravendb\Raven.Studio\Raven.Studio.csproj(1275,3): error MSB4019: The
+imported project "C:\Program Files (x86)\MSBuild\Microsoft\Silverlight\v5.0\Mic
+rosoft.Silverlight.CSharp.targets" was not found. Confirm that the path in the
+<Import> declaration is correct, and that the file exists on disk.
+Done Building Project "C:\devgit\ravendb\Raven.Studio\Raven.Studio.csproj" (def
+ault targets) -- FAILED.
+
+Done Building Project "C:\devgit\ravendb\Raven.Database\Raven.Database.csproj"
+(default targets) -- FAILED.
+
+Done Building Project "C:\devgit\ravendb\Raven.Server\Raven.Server.csproj" (def
+ault targets) -- FAILED.
+
+Project "C:\devgit\ravendb\zzz_RavenDB_Release.sln" (1) is building "C:\devgit\
+ravendb\Raven.Tests\Raven.Tests.csproj" (7) on node 1 (default targets).
+RestorePackages:
+  "C:\devgit\ravendb\.nuget\nuget.exe" install "C:\devgit\ravendb\Raven.Tests\p
+  ackages.config" -source ""  -RequireConsent -o "C:\devgit\ravendb\packages"
+C:\devgit\ravendb\.nuget\nuget.targets(90,9): error : Package restore is disabl
+ed by default. To give consent, open the Visual Studio Options dialog, click on
+ Package Manager node and check 'Allow NuGet to download missing packages durin
+g build.' You can also give consent by setting the environment variable 'Enable
+NuGetPackageRestore' to 'true'. [C:\devgit\ravendb\Raven.Tests\Raven.Tests.cspr
+oj]
+C:\devgit\ravendb\.nuget\nuget.targets(90,9): error MSB3073: The command ""C:\d
+evgit\ravendb\.nuget\nuget.exe" install "C:\devgit\ravendb\Raven.Tests\packages
+.config" -source ""  -RequireConsent -o "C:\devgit\ravendb\packages"" exited wi
+th code 1. [C:\devgit\ravendb\Raven.Tests\Raven.Tests.csproj]
+Done Building Project "C:\devgit\ravendb\Raven.Tests\Raven.Tests.csproj" (defau
+lt targets) -- FAILED.
+
+Project "C:\devgit\ravendb\zzz_RavenDB_Release.sln" (1) is building "C:\devgit\
+ravendb\Raven.Web\Raven.Web.csproj" (8) on node 1 (default targets).
+RestorePackages:
+  "C:\devgit\ravendb\.nuget\nuget.exe" install "C:\devgit\ravendb\Raven.Web\pac
+  kages.config" -source ""  -RequireConsent -o "C:\devgit\ravendb\packages"
+  All packages listed in packages.config are already installed.
+Done Building Project "C:\devgit\ravendb\Raven.Web\Raven.Web.csproj" (default t
+argets) -- FAILED.
+
+Project "C:\devgit\ravendb\zzz_RavenDB_Release.sln" (1) is building "C:\devgit\
+ravendb\Raven.Client.Lightweight\Raven.Client.Lightweight.csproj" (9) on node 1
+ (default targets).
+ResolveAssemblyReferences:
+  A TargetFramework profile exclusion list will be generated.
+GenerateTargetFrameworkMonikerAttribute:
+Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output fi
+les are up-to-date with respect to the input files.
+CoreCompile:
+  c:\Windows\Microsoft.NET\Framework\v4.0.30319\Csc.exe /noconfig /nowarn:"1591
+   1573",1701,1702 /nostdlib+ /errorreport:prompt /warn:4 /doc:bin\Release\Rave
+  n.Client.Lightweight.xml /define:TRACE;CLIENT /reference:"C:\Program Files (x
+  86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Profile\Clien
+  t\Microsoft.CSharp.dll" /reference:"C:\Program Files (x86)\Reference Assembli
+  es\Microsoft\Framework\.NETFramework\v4.0\Profile\Client\Microsoft.VisualBasi
+  c.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Fram
+  ework\.NETFramework\v4.0\Profile\Client\mscorlib.dll" /reference:C:\devgit\ra
+  vendb\build\Raven.Abstractions.dll /reference:"C:\Program Files (x86)\Referen
+  ce Assemblies\Microsoft\Framework\.NETFramework\v4.0\Profile\Client\System.Co
+  mponentModel.Composition.dll" /reference:"C:\Program Files (x86)\Reference As
+  semblies\Microsoft\Framework\.NETFramework\v4.0\Profile\Client\System.Core.dl
+  l" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framewor
+  k\.NETFramework\v4.0\Profile\Client\System.dll" /reference:"C:\Program Files
+  (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Profile\Cli
+  ent\System.Transactions.dll" /debug:pdbonly /filealign:512 /keyfile:..\Raven.
+  Database\RavenDB.snk /optimize+ /out:obj\Release\Raven.Client.Lightweight.dll
+   /target:library ..\CommonAssemblyInfo.cs Bundles\MoreLikeThis\MoreLikeThisEx
+  tensions.cs Bundles\Versioning\VersioningExtensions.cs Changes\IDatabaseChang
+  es.cs Changes\LocalConnectionState.cs Changes\RemoteDatabaseChanges.cs Change
+  s\TaskedObservable.cs Changes\TaskErrorExtensions.cs Util\CSharpClassName.cs
+  Connection\Async\AsyncDatabaseCommandsExtensions.cs Connection\Async\AsyncSer
+  verClient.cs Connection\Async\IAsyncDatabaseCommands.cs Connection\CachedRequ
+  est.cs Connection\CreateHttpJsonRequestParams.cs Connection\ObservableLineStr
+  eam.cs Connection\HttpExtensions.cs Connection\HttpJsonRequest.cs Connection\
+  HttpJsonRequestFactory.cs Connection\IDatabaseCommands.cs Connection\IRavenQu
+  eryInspector.cs Connection\DocumentConventionJsonExtensions.cs Connection\Jso
+  nLuceneDateTimeConverter.cs Connection\MultiGetOperation.cs Connection\Profil
+  ing\ConcurrentBoundedList.cs Connection\Profiling\IHoldProfilingInformation.c
+  s Connection\Profiling\ProfilingContext.cs Connection\Profiling\RequestStatus
+  .cs Connection\Profiling\RequestResultArgs.cs Connection\Profiling\ProfilingI
+  nformation.cs Connection\RavenTransactionAccessor.cs Connection\RavenUrlExten
+  sions.cs Connection\ReplicationInformer.cs Connection\SerializationHelper.cs
+  Connection\ServerClient.cs Converters\GuidConverter.cs Converters\Int32Conver
+  ter.cs Converters\Int64Converter.cs Converters\ITypeConverter.cs Document\Asy
+  ncMultiDatabaseHiLoKeyGenerator.cs Document\AsyncShardedDocumentQuery.cs Docu
+  ment\AsyncMultiTypeHiLoKeyGenerator.cs Document\AsyncHiLoKeyGenerator.cs Docu
+  ment\Async\AsyncDocumentKeyGeneration.cs Document\Batches\LazyStartsWithOpera
+  tion.cs Document\GenerateEntityIdOnTheClient.cs Document\EntityToJson.cs Docu
+  ment\MultiDatabaseHiLoGenerator.cs Document\OAuth\BasicAuthenticator.cs Docum
+  ent\RemoteBulkInsertOperation.cs Document\BulkInsertOperation.cs Exceptions\S
+  erverRequestError.cs FieldHighlightings.cs Extensions\AsyncDocumentSessionExt
+  esions.cs IAsyncDocumentSessionImpl.cs DocumentStoreBase.cs Document\AsyncDoc
+  umentQuery.cs Document\Async\AsyncDocumentSession.cs Document\AsyncMultiLoade
+  rWithInclude.cs Document\Batches\ILazyLoaderWithInclude.cs Document\Batches\I
+  LazyOperation.cs Document\Batches\ILazySessionOperations.cs Document\Batches\
+  LazyLoadOperation.cs Document\Batches\LazyMultiLoaderWithInclude.cs Document\
+  Batches\LazyMultiLoadOperation.cs Document\Batches\LazyQueryOperation.cs Docu
+  ment\Batches\LazySuggestOperation.cs Document\Batches\LazyFacetsOperation.cs
+  Document\DefaultRavenContractResolver.cs Document\DocumentConvention.cs Docum
+  ent\AbstractDocumentQuery.cs Document\DocumentQuery.cs Document\DocumentSessi
+  on.cs Document\DocumentStore.cs Document\DTC\PendingTransactionRecovery.cs Do
+  cument\FailoverBehavior.cs Document\HiLoKeyGenerator.cs Document\HiLoKeyGener
+  atorBase.cs Document\IAbstractDocumentQuery.cs Document\IAsyncLoaderWithInclu
+  de.cs Document\ILoaderWithInclude.cs Document\InMemoryDocumentSessionOperatio
+  ns.cs Document\DocumentSessionListeners.cs Document\MultiLoaderWithInclude.cs
+   Document\MultiTypeHiLoKeyGenerator.cs Document\PromotableRavenClientEnlistme
+  nt.cs Document\RavenClientEnlistment.cs Document\ReflectionUtil.cs Document\S
+  essionOperations\LoadOperation.cs Document\SessionOperations\MultiLoadOperati
+  on.cs Document\SessionOperations\QueryOperation.cs Document\OpenSessionOption
+  s.cs Document\ShardedDocumentQuery.cs EntityStored.cs EntityToDocument.cs Exc
+  eptions\ConflictException.cs Exceptions\NonAuthoritiveInformationException.cs
+   Exceptions\NonUniqueObjectException.cs Exceptions\ReadVetoException.cs Exten
+  sions\DatabaseCommandsExtensions.cs Extensions\MultiDatabase.cs Extensions\Mu
+  ltiTenancyExtensions.cs Extensions\StringExtensions.cs Extensions\TaskExtensi
+  ons.cs IAdvancedDocumentSessionOperations.cs IAsyncAdvancedSessionOperations.
+  cs IAsyncDocumentQuery.cs IAsyncDocumentSession.cs IDisposalNotification.cs I
+  DocumentSessionImpl.cs Indexes\AbstractGenericIndexCreationTask.cs Indexes\Ab
+  stractMultiMapIndexCreationTask.cs Linq\Indexing\IndexingLinqExtensions.cs Li
+  nq\LinqPathProvider.cs Linq\RavenQueryableExtensions.cs Linq\ReflectionExtens
+  ions.cs Listeners\IDocumentConflictListener.cs PublicExtensions\SearchOptions
+  .cs Listeners\IDocumentConversionListener.cs Listeners\IDocumentDeleteListene
+  r.cs IDocumentQuery.cs IDocumentQueryBase.cs IDocumentQueryCustomization.cs L
+  isteners\IDocumentQueryListener.cs IDocumentSession.cs IDocumentStore.cs List
+  eners\IDocumentStoreListener.cs Indexes\AbstractIndexCreationTask.cs Indexes\
+  ExpressionOperatorPrecedence.cs Indexes\ExpressionOperatorPrecedenceExtension
+  .cs Indexes\ExpressionStringBuilder.cs Indexes\IClientSideDatabase.cs Indexes
+  \IndexCreation.cs Indexes\IndexDefinitionBuilder.cs Indexes\IndexDefinitionHe
+  lper.cs Indexes\RavenDocumentsByEntityName.cs ISyncAdvancedSessionOperation.c
+  s ITransactionalDocumentSession.cs Linq\ExpressionInfo.cs Linq\IDocumentQuery
+  Generator.cs Linq\IRavenQueryable.cs Linq\IRavenQueryProvider.cs PublicExtens
+  ions\LinqExtensions.cs PublicExtensions\LinqExtensions_Obsolete.cs Linq\Raven
+  QueryInspector.cs Linq\RavenQueryProvider.cs Linq\RavenQueryProviderProcessor
+  .cs RavenQueryHighlightings.cs RavenQueryStatistics.cs Linq\TypeSystem.cs Sha
+  rd\BaseShardedDocumentSession.cs Shard\AsyncShardedDocumentSession.cs Shard\A
+  syncShardedHiloKeyGenerator.cs Shard\IShardResolutionStrategy.cs Shard\Sharde
+  dDatabaseChanges.cs Shard\ShardedDocumentSession.cs Shard\ShardedDocumentStor
+  e.cs Shard\ShardedHiloKeyGenerator.cs Shard\IShardAccessStrategy.cs Extension
+  s\ParallelExtensions.cs Shard\ParallelShardAccessStrategy.cs Shard\Sequential
+  ShardAccessStrategy.cs Shard\DefaultShardResolutionStrategy.cs Shard\ShardedO
+  bservableWithTask.cs Shard\ShardRequestData.cs Shard\ShardStrategy.cs StoredE
+  ntityEventArgs.cs Util\GlobalLastEtagHolder.cs Util\JSBeautify.cs Util\Concat
+  Observable.cs Changes\TaskObservable.cs Util\Inflector.cs Util\LastEtagHolder
+  .cs Util\ObjectReferenceEqualityComparer.cs Util\SimpleCache.cs Util\Types.cs
+   WhereEqualsParams.cs "C:\Users\rg\AppData\Local\Temp\.NETFramework,Version=v
+  4.0,Profile=Client.AssemblyAttributes.cs"
+CopyFilesToOutputDirectory:
+  Copying file from "obj\Release\Raven.Client.Lightweight.dll" to "C:\devgit\ra
+  vendb\build\\Raven.Client.Lightweight.dll".
+  Raven.Client.Lightweight -> C:\devgit\ravendb\build\Raven.Client.Lightweight.
+  dll
+  Copying file from "obj\Release\Raven.Client.Lightweight.pdb" to "C:\devgit\ra
+  vendb\build\\Raven.Client.Lightweight.pdb".
+  Copying file from "bin\Release\Raven.Client.Lightweight.xml" to "C:\devgit\ra
+  vendb\build\\Raven.Client.Lightweight.xml".
+StyleCop:
+  Excluding
+  No violations encountered
+Done Building Project "C:\devgit\ravendb\Raven.Client.Lightweight\Raven.Client.
+Lightweight.csproj" (default targets).
+
+Project "C:\devgit\ravendb\zzz_RavenDB_Release.sln" (1) is building "C:\devgit\
+ravendb\Raven.Tryouts\Raven.Tryouts.csproj" (10) on node 1 (default targets).
+RestorePackages:
+  "C:\devgit\ravendb\.nuget\nuget.exe" install "C:\devgit\ravendb\Raven.Tryouts
+  \packages.config" -source ""  -RequireConsent -o "C:\devgit\ravendb\packages"
+  All packages listed in packages.config are already installed.
+Project "C:\devgit\ravendb\Raven.Tryouts\Raven.Tryouts.csproj" (10) is building
+ "C:\devgit\ravendb\Raven.Tests.Helpers\Raven.Tests.Helpers.csproj" (12) on nod
+e 1 (default targets).
+RestorePackages:
+  "C:\devgit\ravendb\.nuget\nuget.exe" install "C:\devgit\ravendb\Raven.Tests.H
+  elpers\packages.config" -source ""  -RequireConsent -o "C:\devgit\ravendb\pac
+  kages"
+C:\devgit\ravendb\.nuget\nuget.targets(90,9): error : Package restore is disabl
+ed by default. To give consent, open the Visual Studio Options dialog, click on
+ Package Manager node and check 'Allow NuGet to download missing packages durin
+g build.' You can also give consent by setting the environment variable 'Enable
+NuGetPackageRestore' to 'true'. [C:\devgit\ravendb\Raven.Tests.Helpers\Raven.Te
+sts.Helpers.csproj]
+C:\devgit\ravendb\.nuget\nuget.targets(90,9): error MSB3073: The command ""C:\d
+evgit\ravendb\.nuget\nuget.exe" install "C:\devgit\ravendb\Raven.Tests.Helpers\
+packages.config" -source ""  -RequireConsent -o "C:\devgit\ravendb\packages"" e
+xited with code 1. [C:\devgit\ravendb\Raven.Tests.Helpers\Raven.Tests.Helpers.c
+sproj]
+Done Building Project "C:\devgit\ravendb\Raven.Tests.Helpers\Raven.Tests.Helper
+s.csproj" (default targets) -- FAILED.
+
+Done Building Project "C:\devgit\ravendb\Raven.Tryouts\Raven.Tryouts.csproj" (d
+efault targets) -- FAILED.
+
+Project "C:\devgit\ravendb\zzz_RavenDB_Release.sln" (1) is building "C:\devgit\
+ravendb\Raven.Smuggler\Raven.Smuggler.csproj" (13) on node 1 (default targets).
+ResolveAssemblyReferences:
+  A TargetFramework profile exclusion list will be generated.
+GenerateTargetFrameworkMonikerAttribute:
+Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output fi
+les are up-to-date with respect to the input files.
+CoreCompile:
+  c:\Windows\Microsoft.NET\Framework\v4.0.30319\Csc.exe /noconfig /nowarn:"1591
+   1573",1701,1702 /nostdlib+ /platform:AnyCPU /errorreport:prompt /warn:4 /def
+  ine:TRACE /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\F
+  ramework\.NETFramework\v4.0\Profile\Client\mscorlib.dll" /reference:C:\devgit
+  \ravendb\build\Raven.Abstractions.dll /reference:"C:\Program Files (x86)\Refe
+  rence Assemblies\Microsoft\Framework\.NETFramework\v4.0\Profile\Client\System
+  .Core.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\
+  Framework\.NETFramework\v4.0\Profile\Client\System.Data.DataSetExtensions.dll
+  " /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework
+  \.NETFramework\v4.0\Profile\Client\System.Data.dll" /reference:"C:\Program Fi
+  les (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Profile
+  \Client\System.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\M
+  icrosoft\Framework\.NETFramework\v4.0\Profile\Client\System.Xml.dll" /referen
+  ce:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFrame
+  work\v4.0\Profile\Client\System.Xml.Linq.dll" /debug:pdbonly /filealign:512 /
+  keyfile:..\Raven.Database\RavenDB.snk /optimize+ /out:obj\x86\Release\Raven.S
+  muggler.exe /target:exe /win32icon:..\Raven.Server\favicon.ico ..\CommonAssem
+  blyInfo.cs ..\raven.client.lightweight\extensions\MultiDatabase.cs ..\Raven.S
+  erver\FromMono\Options.cs Program.cs SmugglerApi.cs "C:\Users\rg\AppData\Loca
+  l\Temp\.NETFramework,Version=v4.0,Profile=Client.AssemblyAttributes.cs"
+_CopyAppConfigFile:
+  Copying file from "app.config" to "C:\devgit\ravendb\build\\Raven.Smuggler.ex
+  e.config".
+CopyFilesToOutputDirectory:
+  Copying file from "obj\x86\Release\Raven.Smuggler.exe" to "C:\devgit\ravendb\
+  build\\Raven.Smuggler.exe".
+  Raven.Smuggler -> C:\devgit\ravendb\build\Raven.Smuggler.exe
+  Copying file from "obj\x86\Release\Raven.Smuggler.pdb" to "C:\devgit\ravendb\
+  build\\Raven.Smuggler.pdb".
+StyleCop:
+  Excluding
+  No violations encountered
+Done Building Project "C:\devgit\ravendb\Raven.Smuggler\Raven.Smuggler.csproj"
+(default targets).
+
+Project "C:\devgit\ravendb\zzz_RavenDB_Release.sln" (1) is building "C:\devgit\
+ravendb\Raven.Client.Silverlight\Raven.Client.Silverlight.csproj" (14) on node
+1 (default targets).
+C:\devgit\ravendb\Raven.Client.Silverlight\Raven.Client.Silverlight.csproj(1455
+,3): error MSB4019: The imported project "C:\Program Files (x86)\MSBuild\Micros
+oft\Silverlight\v5.0\Microsoft.Silverlight.CSharp.targets" was not found. Confi
+rm that the path in the <Import> declaration is correct, and that the file exis
+ts on disk.
+Done Building Project "C:\devgit\ravendb\Raven.Client.Silverlight\Raven.Client.
+Silverlight.csproj" (default targets) -- FAILED.
+
+Project "C:\devgit\ravendb\zzz_RavenDB_Release.sln" (1) is building "C:\devgit\
+ravendb\Raven.Tests.Silverlight\Raven.Tests.Silverlight.csproj" (15) on node 1
+(default targets).
+C:\devgit\ravendb\Raven.Tests.Silverlight\Raven.Tests.Silverlight.csproj(159,3)
+: error MSB4019: The imported project "C:\Program Files (x86)\MSBuild\Microsoft
+\Silverlight\v5.0\Microsoft.Silverlight.CSharp.targets" was not found. Confirm
+that the path in the <Import> declaration is correct, and that the file exists
+on disk.
+Done Building Project "C:\devgit\ravendb\Raven.Tests.Silverlight\Raven.Tests.Si
+lverlight.csproj" (default targets) -- FAILED.
+
+Project "C:\devgit\ravendb\zzz_RavenDB_Release.sln" (1) is building "C:\devgit\
+ravendb\Raven.Client.MvcIntegration\Raven.Client.MvcIntegration.csproj" (16) on
+ node 1 (default targets).
+PreBuildEvent:
+  C:\devgit\ravendb\Raven.Client.MvcIntegration\js\tools\node.exe C:\devgit\rav
+  endb\Raven.Client.MvcIntegration\js\tools\r.js -o C:\devgit\ravendb\Raven.Cli
+  ent.MvcIntegration\js\app.build.js out=C:\devgit\ravendb\Raven.Client.MvcInte
+  gration\Content\ravendb-profiler.min.js
+
+  Tracing dependencies for: profiler
+  Uglifying file: C:/devgit/ravendb/Raven.Client.MvcIntegration/Content/ravendb
+  -profiler.min.js
+
+  C:/devgit/ravendb/Raven.Client.MvcIntegration/Content/ravendb-profiler.min.js
+  ----------------
+  C:/devgit/ravendb/Raven.Client.MvcIntegration/js/vendor/require.js
+  C:/devgit/ravendb/Raven.Client.MvcIntegration/js/vendor/jquery.js
+  C:/devgit/ravendb/Raven.Client.MvcIntegration/js/vendor/underscore.js
+  C:/devgit/ravendb/Raven.Client.MvcIntegration/js/vendor/backbone.js
+  C:/devgit/ravendb/Raven.Client.MvcIntegration/js/views/ProfilerButton.js
+  C:/devgit/ravendb/Raven.Client.MvcIntegration/js/views/templateHelper.js
+  C:/devgit/ravendb/Raven.Client.MvcIntegration/js/vendor/text.js
+  text!views/templates/request.html
+  C:/devgit/ravendb/Raven.Client.MvcIntegration/js/views/RequestView.js
+  text!views/templates/session.html
+  C:/devgit/ravendb/Raven.Client.MvcIntegration/js/views/SessionView.js
+  text!views/templates/profiler.html
+  text!views/templates/requestDetails.html!strip
+  C:/devgit/ravendb/Raven.Client.MvcIntegration/js/views/RequestDetailsView.js
+  C:/devgit/ravendb/Raven.Client.MvcIntegration/js/views/ProfilerView.js
+  C:/devgit/ravendb/Raven.Client.MvcIntegration/js/models/Request.js
+  C:/devgit/ravendb/Raven.Client.MvcIntegration/js/models/Session.js
+  C:/devgit/ravendb/Raven.Client.MvcIntegration/js/models/ProfilerData.js
+  C:/devgit/ravendb/Raven.Client.MvcIntegration/js/profiler.js
+  C:/devgit/ravendb/Raven.Client.MvcIntegration/js/config.js
+
+RestorePackages:
+  "C:\devgit\ravendb\.nuget\nuget.exe" install "C:\devgit\ravendb\Raven.Client.
+  MvcIntegration\packages.config" -source ""  -RequireConsent -o "C:\devgit\rav
+  endb\packages"
+C:\devgit\ravendb\.nuget\nuget.targets(90,9): error : Package restore is disabl
+ed by default. To give consent, open the Visual Studio Options dialog, click on
+ Package Manager node and check 'Allow NuGet to download missing packages durin
+g build.' You can also give consent by setting the environment variable 'Enable
+NuGetPackageRestore' to 'true'. [C:\devgit\ravendb\Raven.Client.MvcIntegration\
+Raven.Client.MvcIntegration.csproj]
+C:\devgit\ravendb\.nuget\nuget.targets(90,9): error MSB3073: The command ""C:\d
+evgit\ravendb\.nuget\nuget.exe" install "C:\devgit\ravendb\Raven.Client.MvcInte
+gration\packages.config" -source ""  -RequireConsent -o "C:\devgit\ravendb\pack
+ages"" exited with code 1. [C:\devgit\ravendb\Raven.Client.MvcIntegration\Raven
+.Client.MvcIntegration.csproj]
+Done Building Project "C:\devgit\ravendb\Raven.Client.MvcIntegration\Raven.Clie
+nt.MvcIntegration.csproj" (default targets) -- FAILED.
+
+Project "C:\devgit\ravendb\zzz_RavenDB_Release.sln" (1) is building "C:\devgit\
+ravendb\Raven.Backup\Raven.Backup.csproj" (17) on node 1 (default targets).
+ResolveAssemblyReferences:
+  A TargetFramework profile exclusion list will be generated.
+GenerateTargetFrameworkMonikerAttribute:
+Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output fi
+les are up-to-date with respect to the input files.
+CoreCompile:
+  c:\Windows\Microsoft.NET\Framework\v4.0.30319\Csc.exe /noconfig /nowarn:"1591
+   1573",1701,1702 /nostdlib+ /platform:AnyCPU /errorreport:prompt /warn:4 /def
+  ine:TRACE /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\F
+  ramework\.NETFramework\v4.0\Profile\Client\Microsoft.CSharp.dll" /reference:"
+  C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework
+  \v4.0\Profile\Client\mscorlib.dll" /reference:C:\devgit\ravendb\build\Raven.A
+  bstractions.dll /reference:"C:\Program Files (x86)\Reference Assemblies\Micro
+  soft\Framework\.NETFramework\v4.0\Profile\Client\System.Core.dll" /reference:
+  "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramewor
+  k\v4.0\Profile\Client\System.Data.DataSetExtensions.dll" /reference:"C:\Progr
+  am Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Pr
+  ofile\Client\System.Data.dll" /reference:"C:\Program Files (x86)\Reference As
+  semblies\Microsoft\Framework\.NETFramework\v4.0\Profile\Client\System.dll" /r
+  eference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NE
+  TFramework\v4.0\Profile\Client\System.Xml.dll" /reference:"C:\Program Files (
+  x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Profile\Clie
+  nt\System.Xml.Linq.dll" /debug:pdbonly /filealign:512 /optimize+ /out:obj\x86
+  \Release\Raven.Backup.exe /target:exe ..\CommonAssemblyInfo.cs ..\Raven.Serve
+  r\FromMono\Options.cs BackupOperation.cs Program.cs "C:\Users\rg\AppData\Loca
+  l\Temp\.NETFramework,Version=v4.0,Profile=Client.AssemblyAttributes.cs"
+CopyFilesToOutputDirectory:
+  Copying file from "obj\x86\Release\Raven.Backup.exe" to "C:\devgit\ravendb\bu
+  ild\\Raven.Backup.exe".
+  Raven.Backup -> C:\devgit\ravendb\build\Raven.Backup.exe
+  Copying file from "obj\x86\Release\Raven.Backup.pdb" to "C:\devgit\ravendb\bu
+  ild\\Raven.Backup.pdb".
+Done Building Project "C:\devgit\ravendb\Raven.Backup\Raven.Backup.csproj" (def
+ault targets).
+
+Project "C:\devgit\ravendb\zzz_RavenDB_Release.sln" (1) is building "C:\devgit\
+ravendb\Raven.Client.Silverlight\Raven.Client.Silverlight.g.4.csproj" (18) on n
+ode 1 (default targets).
+RestorePackages:
+  "C:\devgit\ravendb\.nuget\nuget.exe" install "C:\devgit\ravendb\Raven.Client.
+  Silverlight\packages.config" -source ""  -RequireConsent -o "C:\devgit\ravend
+  b\packages"
+  All packages listed in packages.config are already installed.
+GenerateTargetFrameworkMonikerAttribute:
+Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output fi
+les are up-to-date with respect to the input files.
+CoreCompile:
+  c:\Windows\Microsoft.NET\Framework\v4.0.30319\Csc.exe /noconfig /nowarn:"1591
+   1573",1701,1702 /nostdlib+ /errorreport:prompt /warn:4 /doc:Bin\Release\Rave
+  n.Client.Silverlight.xml /define:TRACE;SILVERLIGHT;SL_4 /reference:C:\devgit\
+  ravendb\SharedLibs\AsyncCtpLibrary_Silverlight.dll /reference:C:\devgit\raven
+  db\packages\DH.Scrypt.dll.1.0.3\lib\sl40\DH.Scrypt.dll /reference:"C:\Program
+   Files (x86)\Microsoft SDKs\Silverlight\v4.0\Libraries\Client\Microsoft.CShar
+  p.dll" /reference:"c:\Program Files (x86)\Reference Assemblies\Microsoft\Fram
+  ework\Silverlight\v4.0\Microsoft.VisualBasic.dll" /reference:"c:\Program File
+  s (x86)\Reference Assemblies\Microsoft\Framework\Silverlight\v4.0\mscorlib.dl
+  l" /reference:C:\devgit\ravendb\packages\NLog.2.0.0.2000\lib\sl4\NLog.dll /re
+  ference:"C:\Program Files (x86)\Microsoft SDKs\Silverlight\v4.0\Libraries\Cli
+  ent\System.ComponentModel.Composition.dll" /reference:"c:\Program Files (x86)
+  \Reference Assemblies\Microsoft\Framework\Silverlight\v4.0\System.Core.dll" /
+  reference:"c:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\Si
+  lverlight\v4.0\system.dll" /reference:"c:\Program Files (x86)\Reference Assem
+  blies\Microsoft\Framework\Silverlight\v4.0\System.Net.dll" /reference:C:\devg
+  it\ravendb\packages\Rx-Main.1.0.11226\lib\SL4\System.Reactive.dll /reference:
+  "c:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\Silverlight\
+  v4.0\System.Runtime.Serialization.dll" /reference:"c:\Program Files (x86)\Ref
+  erence Assemblies\Microsoft\Framework\Silverlight\v4.0\System.Windows.Browser
+  .dll" /reference:"c:\Program Files (x86)\Reference Assemblies\Microsoft\Frame
+  work\Silverlight\v4.0\System.Windows.dll" /reference:"c:\Program Files (x86)\
+  Reference Assemblies\Microsoft\Framework\Silverlight\v4.0\System.Xml.dll" /de
+  bug:pdbonly /optimize+ /out:obj\Release\Raven.Client.Silverlight-4.dll /resou
+  rce:..\Imports\Newtonsoft.Json\Src\Newtonsoft.Json\Dynamic.snk,Raven.Client.S
+  ilverlight.Imports.Imports.Newtonsoft.Json.Dynamic.snk /target:library ..\Com
+  monAssemblyInfo.cs ..\imports\newtonsoft.json\src\newtonsoft.json\bson\BsonBi
+  naryType.cs ..\imports\newtonsoft.json\src\newtonsoft.json\bson\BsonBinaryWri
+  ter.cs ..\imports\newtonsoft.json\src\newtonsoft.json\bson\BsonObjectId.cs ..
+  \imports\newtonsoft.json\src\newtonsoft.json\bson\BsonReader.cs ..\imports\ne
+  wtonsoft.json\src\newtonsoft.json\bson\BsonToken.cs ..\imports\newtonsoft.jso
+  n\src\newtonsoft.json\bson\BsonType.cs ..\imports\newtonsoft.json\src\newtons
+  oft.json\bson\BsonWriter.cs ..\imports\newtonsoft.json\src\newtonsoft.json\Co
+  nstructorHandling.cs ..\imports\newtonsoft.json\src\newtonsoft.json\converter
+  s\BinaryConverter.cs ..\imports\newtonsoft.json\src\newtonsoft.json\converter
+  s\BsonObjectIdConverter.cs ..\imports\newtonsoft.json\src\newtonsoft.json\con
+  verters\CustomCreationConverter.cs ..\imports\newtonsoft.json\src\newtonsoft.
+  json\converters\DataSetConverter.cs ..\imports\newtonsoft.json\src\newtonsoft
+  .json\converters\DataTableConverter.cs ..\imports\newtonsoft.json\src\newtons
+  oft.json\converters\DateTimeConverterBase.cs ..\imports\newtonsoft.json\src\n
+  ewtonsoft.json\converters\EntityKeyMemberConverter.cs ..\imports\newtonsoft.j
+  son\src\newtonsoft.json\converters\ExpandoObjectConverter.cs ..\imports\newto
+  nsoft.json\src\newtonsoft.json\converters\IsoDateTimeConverter.cs ..\imports\
+  newtonsoft.json\src\newtonsoft.json\converters\JavaScriptDateTimeConverter.cs
+   ..\imports\newtonsoft.json\src\newtonsoft.json\converters\KeyValuePairConver
+  ter.cs ..\imports\newtonsoft.json\src\newtonsoft.json\converters\RegexConvert
+  er.cs ..\imports\newtonsoft.json\src\newtonsoft.json\converters\StringEnumCon
+  verter.cs ..\imports\newtonsoft.json\src\newtonsoft.json\converters\VersionCo
+  nverter.cs ..\imports\newtonsoft.json\src\newtonsoft.json\converters\XmlNodeC
+  onverter.cs ..\imports\newtonsoft.json\src\newtonsoft.json\DateFormatHandling
+  .cs ..\Imports\Newtonsoft.Json\Src\Newtonsoft.Json\DateParseHandling.cs ..\im
+  ports\newtonsoft.json\src\newtonsoft.json\DateTimeZoneHandling.cs ..\imports\
+  newtonsoft.json\src\newtonsoft.json\DefaultValueHandling.cs ..\imports\newton
+  soft.json\src\newtonsoft.json\FormatterAssemblyStyle.cs ..\imports\newtonsoft
+  .json\src\newtonsoft.json\Formatting.cs ..\imports\newtonsoft.json\src\newton
+  soft.json\IJsonLineInfo.cs ..\imports\newtonsoft.json\src\newtonsoft.json\Jso
+  nArrayAttribute.cs ..\imports\newtonsoft.json\src\newtonsoft.json\JsonConstru
+  ctorAttribute.cs ..\imports\newtonsoft.json\src\newtonsoft.json\JsonContainer
+  Attribute.cs ..\imports\newtonsoft.json\src\newtonsoft.json\JsonConvert.cs ..
+  \imports\newtonsoft.json\src\newtonsoft.json\JsonConverter.cs ..\imports\newt
+  onsoft.json\src\newtonsoft.json\JsonConverterAttribute.cs ..\imports\newtonso
+  ft.json\src\newtonsoft.json\JsonConverterCollection.cs ..\Imports\Newtonsoft.
+  Json\Src\Newtonsoft.Json\JsonDictionaryAttribute.cs ..\Imports\Newtonsoft.Jso
+  n\Src\Newtonsoft.Json\JsonException.cs ..\imports\newtonsoft.json\src\newtons
+  oft.json\JsonIgnoreAttribute.cs ..\imports\newtonsoft.json\src\newtonsoft.jso
+  n\JsonObjectAttribute.cs ..\imports\newtonsoft.json\src\newtonsoft.json\JsonP
+  osition.cs ..\imports\newtonsoft.json\src\newtonsoft.json\JsonPropertyAttribu
+  te.cs ..\imports\newtonsoft.json\src\newtonsoft.json\JsonReader.cs ..\imports
+  \newtonsoft.json\src\newtonsoft.json\JsonReaderException.cs ..\imports\newton
+  soft.json\src\newtonsoft.json\JsonSerializationException.cs ..\imports\newton
+  soft.json\src\newtonsoft.json\JsonSerializer.cs ..\imports\newtonsoft.json\sr
+  c\newtonsoft.json\JsonSerializerSettings.cs ..\imports\newtonsoft.json\src\ne
+  wtonsoft.json\JsonTextReader.cs ..\imports\newtonsoft.json\src\newtonsoft.jso
+  n\JsonTextWriter.cs ..\imports\newtonsoft.json\src\newtonsoft.json\JsonToken.
+  cs ..\imports\newtonsoft.json\src\newtonsoft.json\JsonValidatingReader.cs ..\
+  imports\newtonsoft.json\src\newtonsoft.json\JsonWriter.cs ..\imports\newtonso
+  ft.json\src\newtonsoft.json\JsonWriterException.cs ..\imports\newtonsoft.json
+  \src\newtonsoft.json\linq\Extensions.cs ..\imports\newtonsoft.json\src\newton
+  soft.json\linq\IJEnumerable.cs ..\imports\newtonsoft.json\src\newtonsoft.json
+  \linq\JArray.cs ..\imports\newtonsoft.json\src\newtonsoft.json\linq\JConstruc
+  tor.cs ..\imports\newtonsoft.json\src\newtonsoft.json\linq\JContainer.cs ..\i
+  mports\newtonsoft.json\src\newtonsoft.json\linq\JEnumerable.cs ..\imports\new
+  tonsoft.json\src\newtonsoft.json\linq\JObject.cs ..\imports\newtonsoft.json\s
+  rc\newtonsoft.json\linq\JPath.cs ..\imports\newtonsoft.json\src\newtonsoft.js
+  on\linq\JProperty.cs ..\imports\newtonsoft.json\src\newtonsoft.json\linq\JPro
+  pertyDescriptor.cs ..\imports\newtonsoft.json\src\newtonsoft.json\linq\JPrope
+  rtyKeyedCollection.cs ..\imports\newtonsoft.json\src\newtonsoft.json\linq\JRa
+  w.cs ..\imports\newtonsoft.json\src\newtonsoft.json\linq\JToken.cs ..\imports
+  \newtonsoft.json\src\newtonsoft.json\linq\JTokenEqualityComparer.cs ..\import
+  s\newtonsoft.json\src\newtonsoft.json\linq\JTokenReader.cs ..\imports\newtons
+  oft.json\src\newtonsoft.json\linq\JTokenType.cs ..\imports\newtonsoft.json\sr
+  c\newtonsoft.json\linq\JTokenWriter.cs ..\imports\newtonsoft.json\src\newtons
+  oft.json\linq\JValue.cs ..\imports\newtonsoft.json\src\newtonsoft.json\Member
+  Serialization.cs ..\imports\newtonsoft.json\src\newtonsoft.json\MissingMember
+  Handling.cs ..\imports\newtonsoft.json\src\newtonsoft.json\NullValueHandling.
+  cs ..\imports\newtonsoft.json\src\newtonsoft.json\ObjectCreationHandling.cs .
+  .\imports\newtonsoft.json\src\newtonsoft.json\PreserveReferencesHandling.cs .
+  .\imports\newtonsoft.json\src\newtonsoft.json\ReferenceLoopHandling.cs ..\imp
+  orts\newtonsoft.json\src\newtonsoft.json\Required.cs ..\imports\newtonsoft.js
+  on\src\newtonsoft.json\schema\Extensions.cs ..\imports\newtonsoft.json\src\ne
+  wtonsoft.json\schema\JsonSchema.cs ..\imports\newtonsoft.json\src\newtonsoft.
+  json\schema\JsonSchemaBuilder.cs ..\imports\newtonsoft.json\src\newtonsoft.js
+  on\schema\JsonSchemaConstants.cs ..\imports\newtonsoft.json\src\newtonsoft.js
+  on\schema\JsonSchemaException.cs ..\imports\newtonsoft.json\src\newtonsoft.js
+  on\schema\JsonSchemaGenerator.cs ..\imports\newtonsoft.json\src\newtonsoft.js
+  on\schema\JsonSchemaModel.cs ..\imports\newtonsoft.json\src\newtonsoft.json\s
+  chema\JsonSchemaModelBuilder.cs ..\imports\newtonsoft.json\src\newtonsoft.jso
+  n\schema\JsonSchemaNode.cs ..\imports\newtonsoft.json\src\newtonsoft.json\sch
+  ema\JsonSchemaNodeCollection.cs ..\imports\newtonsoft.json\src\newtonsoft.jso
+  n\schema\JsonSchemaResolver.cs ..\imports\newtonsoft.json\src\newtonsoft.json
+  \schema\JsonSchemaType.cs ..\imports\newtonsoft.json\src\newtonsoft.json\sche
+  ma\JsonSchemaWriter.cs ..\imports\newtonsoft.json\src\newtonsoft.json\schema\
+  UndefinedSchemaIdHandling.cs ..\imports\newtonsoft.json\src\newtonsoft.json\s
+  chema\ValidationEventArgs.cs ..\imports\newtonsoft.json\src\newtonsoft.json\s
+  chema\ValidationEventHandler.cs ..\imports\newtonsoft.json\src\newtonsoft.jso
+  n\SerializationBinder.cs ..\imports\newtonsoft.json\src\newtonsoft.json\seria
+  lization\CachedAttributeGetter.cs ..\imports\newtonsoft.json\src\newtonsoft.j
+  son\serialization\CamelCasePropertyNamesContractResolver.cs ..\imports\newton
+  soft.json\src\newtonsoft.json\serialization\DefaultContractResolver.cs ..\imp
+  orts\newtonsoft.json\src\newtonsoft.json\serialization\DefaultReferenceResolv
+  er.cs ..\imports\newtonsoft.json\src\newtonsoft.json\serialization\DefaultSer
+  ializationBinder.cs ..\imports\newtonsoft.json\src\newtonsoft.json\serializat
+  ion\DynamicValueProvider.cs ..\imports\newtonsoft.json\src\newtonsoft.json\se
+  rialization\ErrorContext.cs ..\imports\newtonsoft.json\src\newtonsoft.json\se
+  rialization\ErrorEventArgs.cs ..\imports\newtonsoft.json\src\newtonsoft.json\
+  serialization\IContractResolver.cs ..\imports\newtonsoft.json\src\newtonsoft.
+  json\serialization\IReferenceResolver.cs ..\imports\newtonsoft.json\src\newto
+  nsoft.json\serialization\IValueProvider.cs ..\imports\newtonsoft.json\src\new
+  tonsoft.json\serialization\JsonArrayContract.cs ..\Imports\Newtonsoft.Json\Sr
+  c\Newtonsoft.Json\Serialization\JsonContainerContract.cs ..\imports\newtonsof
+  t.json\src\newtonsoft.json\serialization\JsonContract.cs ..\imports\newtonsof
+  t.json\src\newtonsoft.json\serialization\JsonDictionaryContract.cs ..\imports
+  \newtonsoft.json\src\newtonsoft.json\serialization\JsonDynamicContract.cs ..\
+  imports\newtonsoft.json\src\newtonsoft.json\serialization\JsonFormatterConver
+  ter.cs ..\imports\newtonsoft.json\src\newtonsoft.json\serialization\JsonISeri
+  alizableContract.cs ..\imports\newtonsoft.json\src\newtonsoft.json\serializat
+  ion\JsonLinqContract.cs ..\imports\newtonsoft.json\src\newtonsoft.json\serial
+  ization\JsonObjectContract.cs ..\imports\newtonsoft.json\src\newtonsoft.json\
+  serialization\JsonPrimitiveContract.cs ..\imports\newtonsoft.json\src\newtons
+  oft.json\serialization\JsonProperty.cs ..\imports\newtonsoft.json\src\newtons
+  oft.json\serialization\JsonPropertyCollection.cs ..\imports\newtonsoft.json\s
+  rc\newtonsoft.json\serialization\JsonSerializerInternalBase.cs ..\imports\new
+  tonsoft.json\src\newtonsoft.json\serialization\JsonSerializerInternalReader.c
+  s ..\imports\newtonsoft.json\src\newtonsoft.json\serialization\JsonSerializer
+  InternalWriter.cs ..\imports\newtonsoft.json\src\newtonsoft.json\serializatio
+  n\JsonSerializerProxy.cs ..\imports\newtonsoft.json\src\newtonsoft.json\seria
+  lization\JsonStringContract.cs ..\imports\newtonsoft.json\src\newtonsoft.json
+  \serialization\JsonTypeReflector.cs ..\imports\newtonsoft.json\src\newtonsoft
+  .json\serialization\LateBoundMetadataTypeAttribute.cs ..\imports\newtonsoft.j
+  son\src\newtonsoft.json\serialization\ObjectConstructor.cs ..\imports\newtons
+  oft.json\src\newtonsoft.json\serialization\OnErrorAttribute.cs ..\imports\new
+  tonsoft.json\src\newtonsoft.json\serialization\ReflectionValueProvider.cs ..\
+  imports\newtonsoft.json\src\newtonsoft.json\StreamingContext.cs ..\imports\ne
+  wtonsoft.json\src\newtonsoft.json\TypeNameHandling.cs ..\imports\newtonsoft.j
+  son\src\newtonsoft.json\utilities\Base64Encoder.cs ..\imports\newtonsoft.json
+  \src\newtonsoft.json\utilities\BidirectionalDictionary.cs ..\imports\newtonso
+  ft.json\src\newtonsoft.json\utilities\CollectionUtils.cs ..\imports\newtonsof
+  t.json\src\newtonsoft.json\utilities\CollectionWrapper.cs ..\imports\newtonso
+  ft.json\src\newtonsoft.json\utilities\ConvertUtils.cs ..\imports\newtonsoft.j
+  son\src\newtonsoft.json\utilities\DateTimeUtils.cs ..\imports\newtonsoft.json
+  \src\newtonsoft.json\utilities\DictionaryWrapper.cs ..\imports\newtonsoft.jso
+  n\src\newtonsoft.json\utilities\DynamicProxy.cs ..\imports\newtonsoft.json\sr
+  c\newtonsoft.json\utilities\DynamicProxyMetaObject.cs ..\imports\newtonsoft.j
+  son\src\newtonsoft.json\utilities\DynamicReflectionDelegateFactory.cs ..\impo
+  rts\newtonsoft.json\src\newtonsoft.json\utilities\DynamicUtils.cs ..\imports\
+  newtonsoft.json\src\newtonsoft.json\utilities\DynamicWrapper.cs ..\imports\ne
+  wtonsoft.json\src\newtonsoft.json\utilities\EnumUtils.cs ..\imports\newtonsof
+  t.json\src\newtonsoft.json\utilities\EnumValue.cs ..\imports\newtonsoft.json\
+  src\newtonsoft.json\utilities\EnumValues.cs ..\imports\newtonsoft.json\src\ne
+  wtonsoft.json\utilities\ILGeneratorExtensions.cs ..\imports\newtonsoft.json\s
+  rc\newtonsoft.json\utilities\JavaScriptUtils.cs ..\imports\newtonsoft.json\sr
+  c\newtonsoft.json\utilities\LateBoundReflectionDelegateFactory.cs ..\imports\
+  newtonsoft.json\src\newtonsoft.json\utilities\LinqBridge.cs ..\imports\newton
+  soft.json\src\newtonsoft.json\utilities\ListWrapper.cs ..\imports\newtonsoft.
+  json\src\newtonsoft.json\utilities\MathUtils.cs ..\imports\newtonsoft.json\sr
+  c\newtonsoft.json\utilities\MethodCall.cs ..\imports\newtonsoft.json\src\newt
+  onsoft.json\utilities\MiscellaneousUtils.cs ..\imports\newtonsoft.json\src\ne
+  wtonsoft.json\utilities\ReflectionDelegateFactory.cs ..\imports\newtonsoft.js
+  on\src\newtonsoft.json\utilities\ReflectionUtils.cs ..\imports\newtonsoft.jso
+  n\src\newtonsoft.json\utilities\StringBuffer.cs ..\imports\newtonsoft.json\sr
+  c\newtonsoft.json\utilities\StringReference.cs ..\imports\newtonsoft.json\src
+  \newtonsoft.json\utilities\StringUtils.cs ..\imports\newtonsoft.json\src\newt
+  onsoft.json\utilities\ThreadSafeStore.cs ..\imports\newtonsoft.json\src\newto
+  nsoft.json\utilities\TypeExtensions.cs ..\imports\newtonsoft.json\src\newtons
+  oft.json\utilities\ValidationUtils.cs ..\imports\newtonsoft.json\src\newtonso
+  ft.json\WriteState.cs ..\Raven.Abstractions\Commands\ScriptedPatchCommandData
+  .cs ..\Raven.Abstractions\Connection\OAuthHelper.cs ..\Raven.Abstractions\Con
+  nection\WebResponseExtensions.cs ..\Raven.Abstractions\Data\Alert.cs ..\Raven
+  .Abstractions\Data\AlertsDocument.cs ..\Raven.Abstractions\Data\ApiKeyDefinit
+  ion.cs ..\Raven.Abstractions\Data\BackupStatus.cs ..\Raven.Abstractions\Data\
+  BuildNumber.cs ..\Raven.Abstractions\Data\ChangeNotification.cs ..\Raven.Abst
+  ractions\Data\Constants.cs ..\Raven.Abstractions\Data\EnumerableExtension.cs
+  ..\Raven.Abstractions\Data\Facet.cs ..\Raven.Abstractions\Data\FacetMode.cs .
+  .\Raven.Abstractions\Data\FacetResult.cs ..\Raven.Abstractions\Data\FacetResu
+  lts.cs ..\Raven.Abstractions\Data\FacetSetup.cs ..\Raven.Abstractions\Data\Fa
+  cetTermSortMode.cs ..\Raven.Abstractions\Data\FacetValue.cs ..\Raven.Abstract
+  ions\Data\GetRequest.cs ..\Raven.Abstractions\Data\GetResponse.cs ..\Raven.Ab
+  stractions\Data\HighlightedField.cs ..\Raven.Abstractions\Data\IJsonDocumentM
+  etadata.cs ..\Raven.Abstractions\Data\JsonDocumentMetadata.cs ..\Raven.Abstra
+  ctions\Data\LicensingStatus.cs ..\Raven.Abstractions\Data\LogItem.cs ..\Raven
+  .Abstractions\Data\PeriodicBackupSetup.cs ..\Raven.Abstractions\Data\Scripted
+  PatchRequest.cs ..\Raven.Abstractions\Default.cs ..\Raven.Abstractions\Extens
+  ions\Buffers.cs ..\Raven.Abstractions\Extensions\CryptoTransformExtensions.cs
+   ..\Raven.Abstractions\Extensions\ExceptionExtensions.cs ..\Raven.Abstraction
+  s\Extensions\Internal\DictionaryExtensions.cs ..\Raven.Abstractions\Extension
+  s\ListExtensions.cs ..\Raven.Abstractions\Extensions\TaskExtensions.cs ..\Rav
+  en.Abstractions\Indexing\FieldTermVector.cs ..\Raven.Abstractions\Indexing\Sp
+  atialOptions.cs ..\Raven.Abstractions\Indexing\SuggestionOptions.cs ..\Raven.
+  Abstractions\Json\JsonDateTimeISO8601Converter.cs ..\Raven.Abstractions\Json\
+  JsonDateTimeOffsetConverter.cs ..\Raven.Abstractions\Json\JsonDictionaryDateT
+  imeKeysConverter.cs ..\Raven.Abstractions\Json\JsonFloatConverter.cs ..\Raven
+  .Abstractions\Json\JsonNumericConverter.cs ..\Raven.Abstractions\Json\JsonToJ
+  sonConverter.cs ..\Raven.Abstractions\Json\Linq\DictionaryWithParentSnapshot.
+  cs ..\Raven.Abstractions\Json\Linq\Extensions.cs ..\Raven.Abstractions\Json\L
+  inq\RavenJArray.cs ..\Raven.Abstractions\Json\Linq\RavenJObject.cs ..\Raven.A
+  bstractions\Json\Linq\RavenJPath.cs ..\Raven.Abstractions\Json\Linq\RavenJson
+  Convert.cs ..\Raven.Abstractions\Json\Linq\RavenJToken.cs ..\Raven.Abstractio
+  ns\Json\Linq\RavenJTokenEqualityComparer.cs ..\Raven.Abstractions\Json\Linq\R
+  avenJTokenReader.cs ..\Raven.Abstractions\Json\Linq\RavenJTokenWriter.cs ..\R
+  aven.Abstractions\Json\Linq\RavenJValue.cs ..\Raven.Abstractions\Json\RavenJs
+  onConverter.cs ..\Raven.Abstractions\Json\RavenJsonTextReader.cs ..\Raven.Abs
+  tractions\Json\Utilities\MathUtils.cs ..\Raven.Abstractions\Json\Utilities\Mi
+  scellaneousUtils.cs ..\Raven.Abstractions\Json\Utilities\StringUtils.cs ..\Ra
+  ven.Abstractions\Linq\DynamicList.cs ..\Raven.Abstractions\Linq\DynamicNullOb
+  ject.cs ..\Raven.Abstractions\Logging\ILog.cs ..\Raven.Abstractions\Logging\I
+  LogExtensions.cs ..\Raven.Abstractions\Logging\ILogManager.cs ..\Raven.Abstra
+  ctions\Logging\LoggerExecutionWrapper.cs ..\Raven.Abstractions\Logging\LogLev
+  el.cs ..\Raven.Abstractions\Logging\LogManager.cs ..\Raven.Abstractions\Loggi
+  ng\LogProviders\Log4NetLogManager.cs ..\Raven.Abstractions\Logging\LogProvide
+  rs\LogManagerBase.cs ..\Raven.Abstractions\Logging\LogProviders\NLogLogManage
+  r.cs ..\Raven.Abstractions\OAuth\AbstractAuthenticator.cs ..\Raven.Abstractio
+  ns\OAuth\SecuredAuthenticator.cs ..\Raven.Abstractions\SystemTime.cs ..\Raven
+  .Abstractions\Util\AtomicDictionary.cs ..\Raven.Abstractions\Util\Base62Util.
+  cs ..\Raven.Abstractions\Util\CompletedTask.cs ..\Raven.Abstractions\Util\Con
+  currentSet.cs ..\Raven.Abstractions\Util\EasyReaderWriterLock.cs ..\Raven.Abs
+  tractions\Util\IncludesUtil.cs ..\Raven.Abstractions\Util\RavenQuery.cs ..\Ra
+  ven.Client.Lightweight\Changes\IDatabaseChanges.cs ..\Raven.Client.Lightweigh
+  t\Changes\LocalConnectionState.cs ..\Raven.Client.Lightweight\Changes\RemoteD
+  atabaseChanges.cs ..\Raven.Client.Lightweight\Changes\TaskedObservable.cs ..\
+  Raven.Client.Lightweight\Changes\TaskErrorExtensions.cs ..\Raven.Client.Light
+  weight\Changes\TaskObservable.cs ..\Raven.Client.Lightweight\Connection\Async
+  \AsyncDatabaseCommandsExtensions.cs ..\Raven.Client.Lightweight\Connection\As
+  ync\AsyncServerClient.cs ..\Raven.Client.Lightweight\Connection\CachedRequest
+  .cs ..\Raven.Client.Lightweight\Connection\CreateHttpJsonRequestParams.cs ..\
+  Raven.Client.Lightweight\Connection\DocumentConventionJsonExtensions.cs ..\Ra
+  ven.Client.Lightweight\Connection\HttpExtensions.cs ..\Raven.Client.Lightweig
+  ht\Connection\MultiGetOperation.cs ..\Raven.Client.Lightweight\Connection\Obs
+  ervableLineStream.cs ..\Raven.Client.Lightweight\Connection\Profiling\Concurr
+  entBoundedList.cs ..\Raven.Client.Lightweight\Connection\Profiling\IHoldProfi
+  lingInformation.cs ..\Raven.Client.Lightweight\Connection\Profiling\Profiling
+  Context.cs ..\Raven.Client.Lightweight\Connection\Profiling\ProfilingInformat
+  ion.cs ..\Raven.Client.Lightweight\Connection\Profiling\RequestResultArgs.cs
+  ..\Raven.Client.Lightweight\Connection\Profiling\RequestStatus.cs ..\Raven.Cl
+  ient.Lightweight\Connection\RavenUrlExtensions.cs ..\Raven.Client.Lightweight
+  \DocumentStoreBase.cs ..\Raven.Client.Lightweight\Document\AbstractDocumentQu
+  ery.cs ..\Raven.Client.Lightweight\Document\AsyncDocumentQuery.cs ..\Raven.Cl
+  ient.Lightweight\Document\AsyncHiLoKeyGenerator.cs ..\Raven.Client.Lightweigh
+  t\Document\AsyncMultiLoaderWithInclude.cs ..\Raven.Client.Lightweight\Documen
+  t\AsyncMultiTypeHiLoKeyGenerator.cs ..\Raven.Client.Lightweight\Document\Asyn
+  c\AsyncDocumentKeyGeneration.cs ..\Raven.Client.Lightweight\Document\Batches\
+  ILazyLoaderWithInclude.cs ..\Raven.Client.Lightweight\Document\Batches\ILazyO
+  peration.cs ..\Raven.Client.Lightweight\Document\Batches\LazyFacetsOperation.
+  cs ..\Raven.Client.Lightweight\Document\Batches\LazyMultiLoaderWithInclude.cs
+   ..\Raven.Client.Lightweight\Document\Batches\LazyMultiLoadOperation.cs ..\Ra
+  ven.Client.Lightweight\Document\DocumentSessionListeners.cs ..\Raven.Client.L
+  ightweight\Document\EntityToJson.cs ..\Raven.Client.Lightweight\Document\Fail
+  overBehavior.cs ..\Raven.Client.Lightweight\Document\GenerateEntityIdOnTheCli
+  ent.cs ..\Raven.Client.Lightweight\Document\HiLoKeyGeneratorBase.cs ..\Raven.
+  Client.Lightweight\Document\IAbstractDocumentQuery.cs ..\Raven.Client.Lightwe
+  ight\Document\IAsyncLoaderWithInclude.cs ..\Raven.Client.Lightweight\Document
+  \OpenSessionOptions.cs ..\Raven.Client.Lightweight\Document\SessionOperations
+  \LoadOperation.cs ..\Raven.Client.Lightweight\Document\SessionOperations\Mult
+  iLoadOperation.cs ..\Raven.Client.Lightweight\Document\SessionOperations\Quer
+  yOperation.cs ..\Raven.Client.Lightweight\Exceptions\ServerRequestError.cs ..
+  \Raven.Client.Lightweight\Extensions\AsyncDocumentSessionExtesions.cs ..\Rave
+  n.Client.Lightweight\Extensions\DatabaseCommandsExtensions.cs ..\Raven.Client
+  .Lightweight\Extensions\MultiDatabase.cs ..\Raven.Client.Lightweight\Extensio
+  ns\ParallelExtensions.cs ..\Raven.Client.Lightweight\Extensions\StringExtensi
+  ons.cs ..\Raven.Client.Lightweight\Extensions\TaskExtensions.cs ..\Raven.Clie
+  nt.Lightweight\FieldHighlightings.cs ..\Raven.Client.Lightweight\IAsyncDocume
+  ntQuery.cs ..\Raven.Client.Lightweight\IAsyncDocumentSessionImpl.cs ..\Raven.
+  Client.Lightweight\IDisposalNotification.cs ..\Raven.Client.Lightweight\IDocu
+  mentQueryBase.cs ..\Raven.Client.Lightweight\Indexes\AbstractGenericIndexCrea
+  tionTask.cs ..\Raven.Client.Lightweight\Indexes\AbstractMultiMapIndexCreation
+  Task.cs ..\Raven.Client.Lightweight\Indexes\IndexDefinitionBuilder.cs ..\Rave
+  n.Client.Lightweight\Indexes\RavenDocumentsByEntityName.cs ..\Raven.Client.Li
+  ghtweight\Indexes\IndexDefinitionHelper.cs ..\Raven.Client.Lightweight\Linq\L
+  inqPathProvider.cs ..\Raven.Client.Lightweight\Linq\RavenQueryableExtensions.
+  cs ..\Raven.Client.Lightweight\Listeners\IDocumentConflictListener.cs ..\Rave
+  n.Client.Lightweight\Listeners\IDocumentConversionListener.cs ..\Raven.Client
+  .Lightweight\Listeners\IDocumentDeleteListener.cs ..\Raven.Client.Lightweight
+  \Listeners\IDocumentQueryListener.cs ..\Raven.Client.Lightweight\Listeners\ID
+  ocumentStoreListener.cs ..\Raven.Client.Lightweight\PublicExtensions\LinqExte
+  nsions.cs ..\Raven.Client.Lightweight\PublicExtensions\LinqExtensions_Obsolet
+  e.cs ..\Raven.Client.Lightweight\PublicExtensions\SearchOptions.cs ..\Raven.C
+  lient.Lightweight\RavenQueryHighlightings.cs ..\Raven.Client.Lightweight\Rave
+  nQueryStatistics.cs ..\Raven.Client.Lightweight\Util\ConcatObservable.cs ..\R
+  aven.Client.Lightweight\Util\CSharpClassName.cs ..\Raven.Client.Lightweight\U
+  til\GlobalLastEtagHolder.cs ..\Raven.Client.Lightweight\Util\JSBeautify.cs ..
+  \Raven.Client.Lightweight\Util\LastEtagHolder.cs ..\Raven.Client.Lightweight\
+  Util\ObjectReferenceEqualityComparer.cs ..\Raven.Client.Lightweight\Util\Simp
+  leCache.cs ..\Raven.Client.Lightweight\Util\Types.cs ..\Raven.Client.Lightwei
+  ght\WhereEqualsParams.cs ..\Raven.Database\Bundles\SqlReplication\LastReplica
+  tedEtag.cs ..\Raven.Database\Bundles\SqlReplication\SqlReplicationConfig.cs .
+  .\Raven.Database\Bundles\SqlReplication\SqlReplicationStatus.cs Connection\Ht
+  tpJsonRequest.cs Connection\HttpJsonRequestFactory.cs Connection\HttpJsonRequ
+  estHelper.cs Imports\Connection\WebRequestEventArgs.cs Imports\Document\OAuth
+  \BasicAuthenticator.cs MissingFromSilverlight\CD.cs MissingFromSilverlight\MD
+  5.cs DotNetZip\Adler.cs DotNetZip\BlockState.cs DotNetZip\CompressionLevel.cs
+   DotNetZip\CompressionMode.cs DotNetZip\CompressionStrategy.cs DotNetZip\Crc3
+  2.cs DotNetZip\CrcCalculatorStream.cs DotNetZip\DeflateFlavor.cs DotNetZip\De
+  flateManager.cs DotNetZip\DeflateStream.cs DotNetZip\FlushType.cs DotNetZip\G
+  ZipStream.cs DotNetZip\InflateBlocks.cs DotNetZip\InflateCodes.cs DotNetZip\I
+  nflateManager.cs DotNetZip\InfTree.cs DotNetZip\InternalConstants.cs DotNetZi
+  p\InternalInflateConstants.cs DotNetZip\ParallelDeflateOutputStream.cs DotNet
+  Zip\SharedUtils.cs DotNetZip\StaticTree.cs DotNetZip\Tree.cs DotNetZip\WorkIt
+  em.cs DotNetZip\ZlibBaseStream.cs DotNetZip\ZlibCodec.cs DotNetZip\ZlibConsta
+  nts.cs DotNetZip\ZlibException.cs DotNetZip\ZlibStream.cs DotNetZip\ZlibStrea
+  mFlavor.cs MissingFromSilverlight\NameValueCollection.cs MissingFromSilverlig
+  ht\SpinWait.cs MissingFromSilverlight\SplitOrderedList.cs MissingFromSilverli
+  ght\Stopwatch.cs ..\Raven.Abstractions\Commands\DeleteCommandData.cs ..\Raven
+  .Abstractions\Commands\PatchCommandData.cs ..\Raven.Abstractions\Commands\Put
+  CommandData.cs ..\Raven.Abstractions\Data\AggregationOperation.cs ..\Raven.Ab
+  stractions\Data\Attachment.cs ..\Raven.Abstractions\Data\BatchResult.cs ..\Ra
+  ven.Abstractions\Data\DatabaseDocument.cs ..\Raven.Abstractions\Data\Database
+  Statistics.cs ..\Raven.Abstractions\Commands\ICommandData.cs ..\Raven.Abstrac
+  tions\Data\IndexStats.cs ..\Raven.Abstractions\Data\JsonDocument.cs ..\Raven.
+  Abstractions\Data\MultiLoadResult.cs ..\Raven.Abstractions\Data\PatchCommandT
+  ype.cs ..\Raven.Abstractions\Data\PatchRequest.cs ..\Raven.Abstractions\Data\
+  PatchResult.cs ..\Raven.Abstractions\Data\PutResult.cs ..\Raven.Abstractions\
+  Data\ServerError.cs ..\Raven.Abstractions\Data\SortedField.cs ..\Raven.Abstra
+  ctions\Data\SpatialIndexQuery.cs ..\Raven.Abstractions\Data\StringDistanceTyp
+  es.cs ..\Raven.Abstractions\Data\SuggestionQuery.cs ..\Raven.Abstractions\Dat
+  a\SuggestionQueryResult.cs ..\Raven.Abstractions\Data\TransactionInformation.
+  cs ..\Raven.Abstractions\Data\TransactionMode.cs ..\Raven.Abstractions\Except
+  ions\ConcurrencyException.cs ..\Raven.Abstractions\Extensions\DisposableActio
+  n.cs ..\Raven.Abstractions\Extensions\ExpressionExtensions.cs ..\Raven.Abstra
+  ctions\Extensions\JsonExtensions.cs ..\Raven.Abstractions\Extensions\Metadata
+  Extensions.cs ..\Raven.Abstractions\Extensions\Reference.cs ..\Raven.Abstract
+  ions\Extensions\StreamExtensions.cs ..\Raven.Abstractions\Indexing\FieldIndex
+  ing.cs ..\Raven.Abstractions\Indexing\FieldStorage.cs ..\Raven.Abstractions\I
+  ndexing\IndexDefinition.cs ..\Raven.Abstractions\Indexing\NumberUtil.cs ..\Ra
+  ven.Abstractions\Data\IndexQuery.cs ..\Raven.Abstractions\Json\DynamicUtil.cs
+   ..\Raven.Abstractions\Json\JsonDynamicConverter.cs ..\Raven.Abstractions\Jso
+  n\JsonEnumConverter.cs ..\Raven.Abstractions\Json\JsonMultiDimensionalArrayCo
+  nverter.cs ..\Raven.Abstractions\Json\JTokenExtensions.cs ..\Raven.Abstractio
+  ns\Linq\DateTools.cs ..\Raven.Abstractions\Linq\DynamicJsonObject.cs ..\Raven
+  .Abstractions\Data\QueryResult.cs ..\Raven.Abstractions\Indexing\SortOptions.
+  cs ..\Raven.Abstractions\Replication\ReplicationDestination.cs ..\Raven.Abstr
+  actions\Replication\ReplicationDocument.cs ..\Raven.Abstractions\Replication\
+  ReplicationStatistics.cs ..\Raven.Client.Lightweight\Connection\Async\IAsyncD
+  atabaseCommands.cs ..\Raven.Client.Lightweight\Connection\IDatabaseCommands.c
+  s ..\Raven.Client.Lightweight\Connection\JsonLuceneDateTimeConverter.cs ..\Ra
+  ven.Client.Lightweight\Connection\RavenTransactionAccessor.cs ..\Raven.Client
+  .Lightweight\Connection\ReplicationInformer.cs ..\Raven.Client.Lightweight\Co
+  nnection\SerializationHelper.cs ..\Raven.Client.Lightweight\Connection\Server
+  Client.cs ..\Raven.Client.Lightweight\Converters\GuidConverter.cs ..\Raven.Cl
+  ient.Lightweight\Converters\Int32Converter.cs ..\Raven.Client.Lightweight\Con
+  verters\Int64Converter.cs ..\Raven.Client.Lightweight\Converters\ITypeConvert
+  er.cs ..\Raven.Client.Lightweight\Document\Async\AsyncDocumentSession.cs ..\R
+  aven.Client.Lightweight\Document\DefaultRavenContractResolver.cs ..\Raven.Cli
+  ent.Lightweight\Document\DocumentConvention.cs ..\Raven.Client.Lightweight\Do
+  cument\DocumentQuery.cs ..\Raven.Client.Lightweight\Document\DocumentSession.
+  cs ..\Raven.Client.Lightweight\Document\DocumentStore.cs ..\Raven.Client.Ligh
+  tweight\Document\ILoaderWithInclude.cs ..\Raven.Client.Lightweight\Document\I
+  nMemoryDocumentSessionOperations.cs ..\Raven.Client.Lightweight\Document\Mult
+  iLoaderWithInclude.cs ..\Raven.Client.Lightweight\Document\PromotableRavenCli
+  entEnlistment.cs ..\Raven.Client.Lightweight\Document\RavenClientEnlistment.c
+  s ..\Raven.Client.Lightweight\Document\ReflectionUtil.cs ..\Raven.Client.Ligh
+  tweight\Document\ShardedDocumentQuery.cs ..\Raven.Client.Lightweight\EntitySt
+  ored.cs ..\Raven.Client.Lightweight\EntityToDocument.cs ..\Raven.Client.Light
+  weight\Exceptions\ConflictException.cs ..\Raven.Client.Lightweight\Exceptions
+  \NonAuthoritiveInformationException.cs ..\Raven.Client.Lightweight\Exceptions
+  \NonUniqueObjectException.cs ..\Raven.Client.Lightweight\Exceptions\ReadVetoE
+  xception.cs ..\Raven.Client.Lightweight\Extensions\MultiTenancyExtensions.cs
+  ..\Raven.Client.Lightweight\IAdvancedDocumentSessionOperations.cs ..\Raven.Cl
+  ient.Lightweight\IAsyncAdvancedSessionOperations.cs ..\Raven.Client.Lightweig
+  ht\IAsyncDocumentSession.cs ..\Raven.Client.Lightweight\IDocumentQuery.cs ..\
+  Raven.Client.Lightweight\IDocumentQueryCustomization.cs ..\Raven.Client.Light
+  weight\IDocumentSession.cs ..\Raven.Client.Lightweight\IDocumentStore.cs ..\R
+  aven.Client.Lightweight\Indexes\AbstractIndexCreationTask.cs ..\Raven.Client.
+  Lightweight\Indexes\ExpressionOperatorPrecedence.cs ..\Raven.Client.Lightweig
+  ht\Indexes\ExpressionOperatorPrecedenceExtension.cs ..\Raven.Client.Lightweig
+  ht\Indexes\ExpressionStringBuilder.cs ..\Raven.Client.Lightweight\Indexes\ICl
+  ientSideDatabase.cs ..\Raven.Client.Lightweight\Indexes\IndexCreation.cs ..\R
+  aven.Client.Lightweight\ISyncAdvancedSessionOperation.cs ..\Raven.Client.Ligh
+  tweight\ITransactionalDocumentSession.cs ..\Raven.Client.Lightweight\Linq\Exp
+  ressionInfo.cs ..\Raven.Client.Lightweight\Linq\IDocumentQueryGenerator.cs ..
+  \Raven.Client.Lightweight\Linq\IRavenQueryable.cs ..\Raven.Client.Lightweight
+  \Connection\IRavenQueryInspector.cs ..\Raven.Client.Lightweight\Linq\IRavenQu
+  eryProvider.cs ..\Raven.Client.Lightweight\Linq\RavenQueryInspector.cs ..\Rav
+  en.Client.Lightweight\Linq\RavenQueryProvider.cs ..\Raven.Client.Lightweight\
+  Linq\RavenQueryProviderProcessor.cs ..\Raven.Client.Lightweight\Linq\Reflecti
+  onExtensions.cs ..\Raven.Client.Lightweight\Linq\TypeSystem.cs ..\Raven.Clien
+  t.Lightweight\StoredEntityEventArgs.cs ..\Raven.Client.Lightweight\Util\Infle
+  ctor.cs "C:\Users\rg\AppData\Local\Temp\Silverlight,Version=v4.0.AssemblyAttr
+  ibutes.cs"
+c:\devgit\ravendb\Raven.Abstractions\Json\Linq\RavenJTokenEqualityComparer.cs(3
+9,15): warning CS0108: 'Raven.Json.Linq.RavenJTokenEqualityComparer.Equals(obje
+ct, object)' hides inherited member 'object.Equals(object, object)'. Use the ne
+w keyword if hiding was intended. [C:\devgit\ravendb\Raven.Client.Silverlight\R
+aven.Client.Silverlight.g.4.csproj]
+c:\devgit\ravendb\Raven.Client.Lightweight\Connection\Async\AsyncServerClient.c
+s(367,43): warning CS1574: XML comment on 'Raven.Client.Connection.Async.AsyncS
+erverClient.ForDatabase(string)' has cref attribute 'IDatabaseCommands' that co
+uld not be resolved [C:\devgit\ravendb\Raven.Client.Silverlight\Raven.Client.Si
+lverlight.g.4.csproj]
+c:\devgit\ravendb\Raven.Client.Lightweight\Connection\Async\AsyncServerClient.c
+s(383,43): warning CS1574: XML comment on 'Raven.Client.Connection.Async.AsyncS
+erverClient.ForSystemDatabase()' has cref attribute 'IDatabaseCommands' that co
+uld not be resolved [C:\devgit\ravendb\Raven.Client.Silverlight\Raven.Client.Si
+lverlight.g.4.csproj]
+c:\devgit\ravendb\Raven.Client.Lightweight\Connection\CachedRequest.cs(14,25):
+warning CS0649: Field 'Raven.Client.Connection.CachedRequest.Time' is never ass
+igned to, and will always have its default value [C:\devgit\ravendb\Raven.Clien
+t.Silverlight\Raven.Client.Silverlight.g.4.csproj]
+c:\devgit\ravendb\Raven.Client.Lightweight\Connection\CachedRequest.cs(15,30):
+warning CS0649: Field 'Raven.Client.Connection.CachedRequest.Headers' is never
+assigned to, and will always have its default value null [C:\devgit\ravendb\Rav
+en.Client.Silverlight\Raven.Client.Silverlight.g.4.csproj]
+c:\devgit\ravendb\Raven.Client.Lightweight\Connection\CachedRequest.cs(20,24):
+warning CS0649: Field 'Raven.Client.Connection.CachedRequestOp.CachedRequest' i
+s never assigned to, and will always have its default value null [C:\devgit\rav
+endb\Raven.Client.Silverlight\Raven.Client.Silverlight.g.4.csproj]
+c:\devgit\ravendb\Raven.Client.Lightweight\Connection\CachedRequest.cs(21,15):
+warning CS0649: Field 'Raven.Client.Connection.CachedRequestOp.SkipServerCheck'
+ is never assigned to, and will always have its default value false [C:\devgit\
+ravendb\Raven.Client.Silverlight\Raven.Client.Silverlight.g.4.csproj]
+c:\devgit\ravendb\Raven.Client.Lightweight\Util\SimpleCache.cs(27,23): warning
+CS0169: The field 'Raven.Client.Util.SimpleCache<T>.failedToGetAvailablePhysica
+lMemory' is never used [C:\devgit\ravendb\Raven.Client.Silverlight\Raven.Client
+.Silverlight.g.4.csproj]
+c:\devgit\ravendb\Raven.Client.Lightweight\Document\DocumentStore.cs(49,15): wa
+rning CS0414: The field 'Raven.Client.Document.DocumentStore.maxNumberOfCachedR
+equests' is assigned but its value is never used [C:\devgit\ravendb\Raven.Clien
+t.Silverlight\Raven.Client.Silverlight.g.4.csproj]
+_CopyFilesMarkedCopyLocal:
+  Copying file from "C:\devgit\ravendb\SharedLibs\AsyncCtpLibrary_Silverlight.d
+  ll" to "C:\devgit\ravendb\build\\AsyncCtpLibrary_Silverlight.dll".
+  Copying file from "C:\devgit\ravendb\packages\DH.Scrypt.dll.1.0.3\lib\sl40\DH
+  .Scrypt.dll" to "C:\devgit\ravendb\build\\DH.Scrypt.dll".
+  Copying file from "C:\Program Files (x86)\Microsoft SDKs\Silverlight\v4.0\Lib
+  raries\Client\Microsoft.CSharp.dll" to "C:\devgit\ravendb\build\\Microsoft.CS
+  harp.dll".
+  Copying file from "C:\devgit\ravendb\packages\NLog.2.0.0.2000\lib\sl4\NLog.dl
+  l" to "C:\devgit\ravendb\build\\NLog.dll".
+  Copying file from "C:\Program Files (x86)\Microsoft SDKs\Silverlight\v4.0\Lib
+  raries\Client\System.ComponentModel.Composition.dll" to "C:\devgit\ravendb\bu
+  ild\\System.ComponentModel.Composition.dll".
+  Copying file from "C:\devgit\ravendb\packages\Rx-Main.1.0.11226\lib\SL4\Syste
+  m.Reactive.dll" to "C:\devgit\ravendb\build\\System.Reactive.dll".
+  Copying file from "C:\devgit\ravendb\SharedLibs\AsyncCtpLibrary_Silverlight.x
+  ml" to "C:\devgit\ravendb\build\\AsyncCtpLibrary_Silverlight.xml".
+  Copying file from "C:\devgit\ravendb\packages\DH.Scrypt.dll.1.0.3\lib\sl40\DH
+  .Scrypt.xml" to "C:\devgit\ravendb\build\\DH.Scrypt.xml".
+  Copying file from "C:\Program Files (x86)\Microsoft SDKs\Silverlight\v4.0\Lib
+  raries\Client\Microsoft.CSharp.xml" to "C:\devgit\ravendb\build\\Microsoft.CS
+  harp.xml".
+  Copying file from "C:\devgit\ravendb\packages\NLog.2.0.0.2000\lib\sl4\NLog.xm
+  l" to "C:\devgit\ravendb\build\\NLog.xml".
+  Copying file from "C:\Program Files (x86)\Microsoft SDKs\Silverlight\v4.0\Lib
+  raries\Client\System.ComponentModel.Composition.xml" to "C:\devgit\ravendb\bu
+  ild\\System.ComponentModel.Composition.xml".
+  Copying file from "C:\devgit\ravendb\packages\Rx-Main.1.0.11226\lib\SL4\Syste
+  m.Reactive.xml" to "C:\devgit\ravendb\build\\System.Reactive.xml".
+  Creating directory "C:\devgit\ravendb\build\de".
+  Copying file from "C:\Program Files (x86)\Microsoft SDKs\Silverlight\v4.0\Lib
+  raries\Client\de\Microsoft.CSharp.resources.dll" to "C:\devgit\ravendb\build\
+  \de\Microsoft.CSharp.resources.dll".
+  Creating directory "C:\devgit\ravendb\build\es".
+  Copying file from "C:\Program Files (x86)\Microsoft SDKs\Silverlight\v4.0\Lib
+  raries\Client\es\Microsoft.CSharp.resources.dll" to "C:\devgit\ravendb\build\
+  \es\Microsoft.CSharp.resources.dll".
+  Creating directory "C:\devgit\ravendb\build\fr".
+  Copying file from "C:\Program Files (x86)\Microsoft SDKs\Silverlight\v4.0\Lib
+  raries\Client\fr\Microsoft.CSharp.resources.dll" to "C:\devgit\ravendb\build\
+  \fr\Microsoft.CSharp.resources.dll".
+  Creating directory "C:\devgit\ravendb\build\it".
+  Copying file from "C:\Program Files (x86)\Microsoft SDKs\Silverlight\v4.0\Lib
+  raries\Client\it\Microsoft.CSharp.resources.dll" to "C:\devgit\ravendb\build\
+  \it\Microsoft.CSharp.resources.dll".
+  Creating directory "C:\devgit\ravendb\build\ja".
+  Copying file from "C:\Program Files (x86)\Microsoft SDKs\Silverlight\v4.0\Lib
+  raries\Client\ja\Microsoft.CSharp.resources.dll" to "C:\devgit\ravendb\build\
+  \ja\Microsoft.CSharp.resources.dll".
+  Creating directory "C:\devgit\ravendb\build\ko".
+  Copying file from "C:\Program Files (x86)\Microsoft SDKs\Silverlight\v4.0\Lib
+  raries\Client\ko\Microsoft.CSharp.resources.dll" to "C:\devgit\ravendb\build\
+  \ko\Microsoft.CSharp.resources.dll".
+  Creating directory "C:\devgit\ravendb\build\ru".
+  Copying file from "C:\Program Files (x86)\Microsoft SDKs\Silverlight\v4.0\Lib
+  raries\Client\ru\Microsoft.CSharp.resources.dll" to "C:\devgit\ravendb\build\
+  \ru\Microsoft.CSharp.resources.dll".
+  Creating directory "C:\devgit\ravendb\build\zh-Hans".
+  Copying file from "C:\Program Files (x86)\Microsoft SDKs\Silverlight\v4.0\Lib
+  raries\Client\zh-Hans\Microsoft.CSharp.resources.dll" to "C:\devgit\ravendb\b
+  uild\\zh-Hans\Microsoft.CSharp.resources.dll".
+  Creating directory "C:\devgit\ravendb\build\zh-Hant".
+  Copying file from "C:\Program Files (x86)\Microsoft SDKs\Silverlight\v4.0\Lib
+  raries\Client\zh-Hant\Microsoft.CSharp.resources.dll" to "C:\devgit\ravendb\b
+  uild\\zh-Hant\Microsoft.CSharp.resources.dll".
+  Copying file from "C:\Program Files (x86)\Microsoft SDKs\Silverlight\v4.0\Lib
+  raries\Client\de\System.ComponentModel.Composition.resources.dll" to "C:\devg
+  it\ravendb\build\\de\System.ComponentModel.Composition.resources.dll".
+  Copying file from "C:\Program Files (x86)\Microsoft SDKs\Silverlight\v4.0\Lib
+  raries\Client\es\System.ComponentModel.Composition.resources.dll" to "C:\devg
+  it\ravendb\build\\es\System.ComponentModel.Composition.resources.dll".
+  Copying file from "C:\Program Files (x86)\Microsoft SDKs\Silverlight\v4.0\Lib
+  raries\Client\fr\System.ComponentModel.Composition.resources.dll" to "C:\devg
+  it\ravendb\build\\fr\System.ComponentModel.Composition.resources.dll".
+  Copying file from "C:\Program Files (x86)\Microsoft SDKs\Silverlight\v4.0\Lib
+  raries\Client\it\System.ComponentModel.Composition.resources.dll" to "C:\devg
+  it\ravendb\build\\it\System.ComponentModel.Composition.resources.dll".
+  Copying file from "C:\Program Files (x86)\Microsoft SDKs\Silverlight\v4.0\Lib
+  raries\Client\ja\System.ComponentModel.Composition.resources.dll" to "C:\devg
+  it\ravendb\build\\ja\System.ComponentModel.Composition.resources.dll".
+  Copying file from "C:\Program Files (x86)\Microsoft SDKs\Silverlight\v4.0\Lib
+  raries\Client\ko\System.ComponentModel.Composition.resources.dll" to "C:\devg
+  it\ravendb\build\\ko\System.ComponentModel.Composition.resources.dll".
+  Copying file from "C:\Program Files (x86)\Microsoft SDKs\Silverlight\v4.0\Lib
+  raries\Client\ru\System.ComponentModel.Composition.resources.dll" to "C:\devg
+  it\ravendb\build\\ru\System.ComponentModel.Composition.resources.dll".
+  Copying file from "C:\Program Files (x86)\Microsoft SDKs\Silverlight\v4.0\Lib
+  raries\Client\zh-Hans\System.ComponentModel.Composition.resources.dll" to "C:
+  \devgit\ravendb\build\\zh-Hans\System.ComponentModel.Composition.resources.dl
+  l".
+  Copying file from "C:\Program Files (x86)\Microsoft SDKs\Silverlight\v4.0\Lib
+  raries\Client\zh-Hant\System.ComponentModel.Composition.resources.dll" to "C:
+  \devgit\ravendb\build\\zh-Hant\System.ComponentModel.Composition.resources.dl
+  l".
+CopyFilesToOutputDirectory:
+  Copying file from "obj\Release\Raven.Client.Silverlight-4.dll" to "C:\devgit\
+  ravendb\build\\Raven.Client.Silverlight-4.dll".
+  Raven.Client.Silverlight.g.4 -> C:\devgit\ravendb\build\Raven.Client.Silverli
+  ght-4.dll
+  Copying file from "obj\Release\Raven.Client.Silverlight-4.pdb" to "C:\devgit\
+  ravendb\build\\Raven.Client.Silverlight-4.pdb".
+  Copying file from "Bin\Release\Raven.Client.Silverlight.xml" to "C:\devgit\ra
+  vendb\build\\Raven.Client.Silverlight.xml".
+Done Building Project "C:\devgit\ravendb\Raven.Client.Silverlight\Raven.Client.
+Silverlight.g.4.csproj" (default targets).
+
+Project "C:\devgit\ravendb\zzz_RavenDB_Release.sln" (1) is building "C:\devgit\
+ravendb\Raven.Performance\Raven.Performance.csproj" (19) on node 1 (default tar
+gets).
+RestorePackages:
+  "C:\devgit\ravendb\.nuget\nuget.exe" install "C:\devgit\ravendb\Raven.Perform
+  ance\packages.config" -source ""  -RequireConsent -o "C:\devgit\ravendb\packa
+  ges"
+  All packages listed in packages.config are already installed.
+Done Building Project "C:\devgit\ravendb\Raven.Performance\Raven.Performance.cs
+proj" (default targets) -- FAILED.
+
+Project "C:\devgit\ravendb\zzz_RavenDB_Release.sln" (1) is building "C:\devgit\
+ravendb\Raven.StressTests\Raven.StressTests.csproj" (20) on node 1 (default tar
+gets).
+RestorePackages:
+  "C:\devgit\ravendb\.nuget\nuget.exe" install "C:\devgit\ravendb\Raven.StressT
+  ests\packages.config" -source ""  -RequireConsent -o "C:\devgit\ravendb\packa
+  ges"
+C:\devgit\ravendb\.nuget\nuget.targets(90,9): error : Package restore is disabl
+ed by default. To give consent, open the Visual Studio Options dialog, click on
+ Package Manager node and check 'Allow NuGet to download missing packages durin
+g build.' You can also give consent by setting the environment variable 'Enable
+NuGetPackageRestore' to 'true'. [C:\devgit\ravendb\Raven.StressTests\Raven.Stre
+ssTests.csproj]
+C:\devgit\ravendb\.nuget\nuget.targets(90,9): error MSB3073: The command ""C:\d
+evgit\ravendb\.nuget\nuget.exe" install "C:\devgit\ravendb\Raven.StressTests\pa
+ckages.config" -source ""  -RequireConsent -o "C:\devgit\ravendb\packages"" exi
+ted with code 1. [C:\devgit\ravendb\Raven.StressTests\Raven.StressTests.csproj]
+Done Building Project "C:\devgit\ravendb\Raven.StressTests\Raven.StressTests.cs
+proj" (default targets) -- FAILED.
+
+Project "C:\devgit\ravendb\zzz_RavenDB_Release.sln" (1) is building "C:\devgit\
+ravendb\Samples\Raven.Sample.Failover\Raven.Sample.Failover.csproj" (23) on nod
+e 1 (default targets).
+RestorePackages:
+  "C:\devgit\ravendb\.nuget\nuget.exe" install "C:\devgit\ravendb\Samples\Raven
+  .Sample.Failover\packages.config" -source ""  -RequireConsent -o "C:\devgit\r
+  avendb\packages"
+C:\devgit\ravendb\.nuget\nuget.targets(90,9): error : Package restore is disabl
+ed by default. To give consent, open the Visual Studio Options dialog, click on
+ Package Manager node and check 'Allow NuGet to download missing packages durin
+g build.' You can also give consent by setting the environment variable 'Enable
+NuGetPackageRestore' to 'true'. [C:\devgit\ravendb\Samples\Raven.Sample.Failove
+r\Raven.Sample.Failover.csproj]
+C:\devgit\ravendb\.nuget\nuget.targets(90,9): error MSB3073: The command ""C:\d
+evgit\ravendb\.nuget\nuget.exe" install "C:\devgit\ravendb\Samples\Raven.Sample
+.Failover\packages.config" -source ""  -RequireConsent -o "C:\devgit\ravendb\pa
+ckages"" exited with code 1. [C:\devgit\ravendb\Samples\Raven.Sample.Failover\R
+aven.Sample.Failover.csproj]
+Done Building Project "C:\devgit\ravendb\Samples\Raven.Sample.Failover\Raven.Sa
+mple.Failover.csproj" (default targets) -- FAILED.
+
+Project "C:\devgit\ravendb\zzz_RavenDB_Release.sln" (1) is building "C:\devgit\
+ravendb\Samples\Raven.Sample.LiveProjections\Raven.Sample.LiveProjections.cspro
+j" (25) on node 1 (default targets).
+ResolveAssemblyReferences:
+  A TargetFramework profile exclusion list will be generated.
+GenerateTargetFrameworkMonikerAttribute:
+Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output fi
+les are up-to-date with respect to the input files.
+CoreCompile:
+  c:\Windows\Microsoft.NET\Framework\v4.0.30319\Csc.exe /noconfig /nowarn:"1591
+   1573",1701,1702 /nostdlib+ /platform:x86 /errorreport:prompt /warn:4 /define
+  :TRACE /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Fram
+  ework\.NETFramework\v4.0\Profile\Client\Microsoft.CSharp.dll" /reference:"C:\
+  Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4
+  .0\Profile\Client\mscorlib.dll" /reference:C:\devgit\ravendb\build\Raven.Clie
+  nt.Lightweight.dll /reference:"C:\Program Files (x86)\Reference Assemblies\Mi
+  crosoft\Framework\.NETFramework\v4.0\Profile\Client\System.ComponentModel.Com
+  position.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microso
+  ft\Framework\.NETFramework\v4.0\Profile\Client\System.Core.dll" /reference:"C
+  :\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\
+  v4.0\Profile\Client\System.Data.DataSetExtensions.dll" /reference:"C:\Program
+   Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Prof
+  ile\Client\System.Data.dll" /reference:"C:\Program Files (x86)\Reference Asse
+  mblies\Microsoft\Framework\.NETFramework\v4.0\Profile\Client\System.dll" /ref
+  erence:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETF
+  ramework\v4.0\Profile\Client\System.Xml.dll" /reference:"C:\Program Files (x8
+  6)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Profile\Client
+  \System.Xml.Linq.dll" /debug:pdbonly /filealign:512 /optimize+ /out:obj\x86\R
+  elease\Raven.Sample.LiveProjections.exe /target:exe ..\..\CommonAssemblyInfo.
+  cs Program.cs "C:\Users\rg\AppData\Local\Temp\.NETFramework,Version=v4.0,Prof
+  ile=Client.AssemblyAttributes.cs"
+CopyFilesToOutputDirectory:
+  Copying file from "obj\x86\Release\Raven.Sample.LiveProjections.exe" to "C:\d
+  evgit\ravendb\build\\Raven.Sample.LiveProjections.exe".
+  Raven.Sample.LiveProjections -> C:\devgit\ravendb\build\Raven.Sample.LiveProj
+  ections.exe
+  Copying file from "obj\x86\Release\Raven.Sample.LiveProjections.pdb" to "C:\d
+  evgit\ravendb\build\\Raven.Sample.LiveProjections.pdb".
+StyleCop:
+  Excluding
+  No violations encountered
+Done Building Project "C:\devgit\ravendb\Samples\Raven.Sample.LiveProjections\R
+aven.Sample.LiveProjections.csproj" (default targets).
+
+Project "C:\devgit\ravendb\zzz_RavenDB_Release.sln" (1) is building "C:\devgit\
+ravendb\Samples\Raven.Sample.MultiTenancy\Raven.Sample.MultiTenancy.csproj" (26
+) on node 1 (default targets).
+ResolveAssemblyReferences:
+  A TargetFramework profile exclusion list will be generated.
+GenerateTargetFrameworkMonikerAttribute:
+Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output fi
+les are up-to-date with respect to the input files.
+CoreCompile:
+  c:\Windows\Microsoft.NET\Framework\v4.0.30319\Csc.exe /noconfig /nowarn:"1591
+   1573",1701,1702 /nostdlib+ /platform:x86 /errorreport:prompt /warn:4 /define
+  :TRACE /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Fram
+  ework\.NETFramework\v4.0\Profile\Client\Microsoft.CSharp.dll" /reference:"C:\
+  Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4
+  .0\Profile\Client\mscorlib.dll" /reference:C:\devgit\ravendb\build\Raven.Clie
+  nt.Lightweight.dll /reference:"C:\Program Files (x86)\Reference Assemblies\Mi
+  crosoft\Framework\.NETFramework\v4.0\Profile\Client\System.Core.dll" /referen
+  ce:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFrame
+  work\v4.0\Profile\Client\System.Data.DataSetExtensions.dll" /reference:"C:\Pr
+  ogram Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0
+  \Profile\Client\System.Data.dll" /reference:"C:\Program Files (x86)\Reference
+   Assemblies\Microsoft\Framework\.NETFramework\v4.0\Profile\Client\System.dll"
+   /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\
+  .NETFramework\v4.0\Profile\Client\System.Xml.dll" /reference:"C:\Program File
+  s (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Profile\C
+  lient\System.Xml.Linq.dll" /debug:pdbonly /filealign:512 /optimize+ /out:obj\
+  x86\Release\Raven.Sample.MultiTenancy.exe /target:exe ..\..\CommonAssemblyInf
+  o.cs Program.cs "C:\Users\rg\AppData\Local\Temp\.NETFramework,Version=v4.0,Pr
+  ofile=Client.AssemblyAttributes.cs"
+CopyFilesToOutputDirectory:
+  Copying file from "obj\x86\Release\Raven.Sample.MultiTenancy.exe" to "C:\devg
+  it\ravendb\build\\Raven.Sample.MultiTenancy.exe".
+  Raven.Sample.MultiTenancy -> C:\devgit\ravendb\build\Raven.Sample.MultiTenanc
+  y.exe
+  Copying file from "obj\x86\Release\Raven.Sample.MultiTenancy.pdb" to "C:\devg
+  it\ravendb\build\\Raven.Sample.MultiTenancy.pdb".
+StyleCop:
+  Excluding
+  No violations encountered
+Done Building Project "C:\devgit\ravendb\Samples\Raven.Sample.MultiTenancy\Rave
+n.Sample.MultiTenancy.csproj" (default targets).
+
+Project "C:\devgit\ravendb\zzz_RavenDB_Release.sln" (1) is building "C:\devgit\
+ravendb\Samples\Raven.Sample.Replication\Raven.Sample.Replication.csproj" (27)
+on node 1 (default targets).
+ResolveAssemblyReferences:
+  A TargetFramework profile exclusion list will be generated.
+GenerateTargetFrameworkMonikerAttribute:
+Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output fi
+les are up-to-date with respect to the input files.
+CoreCompile:
+  c:\Windows\Microsoft.NET\Framework\v4.0.30319\Csc.exe /noconfig /nowarn:"1591
+   1573",1701,1702 /nostdlib+ /platform:x86 /errorreport:prompt /warn:4 /define
+  :TRACE /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Fram
+  ework\.NETFramework\v4.0\Profile\Client\Microsoft.CSharp.dll" /reference:"C:\
+  Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4
+  .0\Profile\Client\mscorlib.dll" /reference:C:\devgit\ravendb\build\Raven.Abst
+  ractions.dll /reference:C:\devgit\ravendb\build\Raven.Client.Lightweight.dll
+  /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.
+  NETFramework\v4.0\Profile\Client\System.Core.dll" /reference:"C:\Program File
+  s (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Profile\C
+  lient\System.Data.DataSetExtensions.dll" /reference:"C:\Program Files (x86)\R
+  eference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Profile\Client\Sys
+  tem.Data.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microso
+  ft\Framework\.NETFramework\v4.0\Profile\Client\System.dll" /reference:"C:\Pro
+  gram Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\
+  Profile\Client\System.Xml.dll" /reference:"C:\Program Files (x86)\Reference A
+  ssemblies\Microsoft\Framework\.NETFramework\v4.0\Profile\Client\System.Xml.Li
+  nq.dll" /debug:pdbonly /filealign:512 /optimize+ /out:obj\x86\Release\Raven.S
+  ample.Replication.exe /target:exe ..\..\CommonAssemblyInfo.cs Program.cs "C:\
+  Users\rg\AppData\Local\Temp\.NETFramework,Version=v4.0,Profile=Client.Assembl
+  yAttributes.cs"
+CopyFilesToOutputDirectory:
+  Copying file from "obj\x86\Release\Raven.Sample.Replication.exe" to "C:\devgi
+  t\ravendb\build\\Raven.Sample.Replication.exe".
+  Raven.Sample.Replication -> C:\devgit\ravendb\build\Raven.Sample.Replication.
+  exe
+  Copying file from "obj\x86\Release\Raven.Sample.Replication.pdb" to "C:\devgi
+  t\ravendb\build\\Raven.Sample.Replication.pdb".
+StyleCop:
+  Excluding
+  No violations encountered
+Done Building Project "C:\devgit\ravendb\Samples\Raven.Sample.Replication\Raven
+.Sample.Replication.csproj" (default targets).
+
+Project "C:\devgit\ravendb\zzz_RavenDB_Release.sln" (1) is building "C:\devgit\
+ravendb\Samples\Raven.Sample.ReplicationComplex\Raven.Sample.ReplicationComplex
+.csproj" (28) on node 1 (default targets).
+ResolveAssemblyReferences:
+  A TargetFramework profile exclusion list will be generated.
+GenerateTargetFrameworkMonikerAttribute:
+Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output fi
+les are up-to-date with respect to the input files.
+CoreCompile:
+  c:\Windows\Microsoft.NET\Framework\v4.0.30319\Csc.exe /noconfig /nowarn:"1591
+   1573",1701,1702 /nostdlib+ /platform:x86 /errorreport:prompt /warn:4 /define
+  :TRACE /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Fram
+  ework\.NETFramework\v4.0\Profile\Client\Microsoft.CSharp.dll" /reference:"C:\
+  Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4
+  .0\Profile\Client\mscorlib.dll" /reference:C:\devgit\ravendb\build\Raven.Abst
+  ractions.dll /reference:C:\devgit\ravendb\build\Raven.Client.Lightweight.dll
+  /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.
+  NETFramework\v4.0\Profile\Client\System.Core.dll" /reference:"C:\Program File
+  s (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Profile\C
+  lient\System.Data.DataSetExtensions.dll" /reference:"C:\Program Files (x86)\R
+  eference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Profile\Client\Sys
+  tem.Data.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microso
+  ft\Framework\.NETFramework\v4.0\Profile\Client\System.dll" /reference:"C:\Pro
+  gram Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\
+  Profile\Client\System.Xml.dll" /reference:"C:\Program Files (x86)\Reference A
+  ssemblies\Microsoft\Framework\.NETFramework\v4.0\Profile\Client\System.Xml.Li
+  nq.dll" /debug:pdbonly /filealign:512 /optimize+ /out:obj\x86\Release\Raven.S
+  ample.ReplicationComplex.exe /target:exe ..\..\CommonAssemblyInfo.cs Program.
+  cs "C:\Users\rg\AppData\Local\Temp\.NETFramework,Version=v4.0,Profile=Client.
+  AssemblyAttributes.cs"
+CopyFilesToOutputDirectory:
+  Copying file from "obj\x86\Release\Raven.Sample.ReplicationComplex.exe" to "C
+  :\devgit\ravendb\build\\Raven.Sample.ReplicationComplex.exe".
+  Raven.Sample.ReplicationComplex -> C:\devgit\ravendb\build\Raven.Sample.Repli
+  cationComplex.exe
+  Copying file from "obj\x86\Release\Raven.Sample.ReplicationComplex.pdb" to "C
+  :\devgit\ravendb\build\\Raven.Sample.ReplicationComplex.pdb".
+Done Building Project "C:\devgit\ravendb\Samples\Raven.Sample.ReplicationComple
+x\Raven.Sample.ReplicationComplex.csproj" (default targets).
+
+Project "C:\devgit\ravendb\zzz_RavenDB_Release.sln" (1) is building "C:\devgit\
+ravendb\Samples\Raven.Sample.ShardClient\Raven.Sample.ShardClient.csproj" (29)
+on node 1 (default targets).
+GenerateTargetFrameworkMonikerAttribute:
+Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output fi
+les are up-to-date with respect to the input files.
+CoreCompile:
+  c:\Windows\Microsoft.NET\Framework\v4.0.30319\Csc.exe /noconfig /nowarn:"1591
+   1573",1701,1702 /nostdlib+ /platform:x86 /errorreport:prompt /warn:4 /define
+  :TRACE /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Fram
+  ework\.NETFramework\v4.0\Microsoft.CSharp.dll" /reference:"C:\Program Files (
+  x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\mscorlib.dll
+  " /reference:C:\devgit\ravendb\build\Raven.Abstractions.dll /reference:C:\dev
+  git\ravendb\build\Raven.Client.Lightweight.dll /reference:"C:\Program Files (
+  x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.
+  dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framew
+  ork\.NETFramework\v4.0\System.Data.DataSetExtensions.dll" /reference:"C:\Prog
+  ram Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\S
+  ystem.Data.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Micro
+  soft\Framework\.NETFramework\v4.0\System.dll" /reference:"C:\Program Files (x
+  86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Web.dl
+  l" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framewor
+  k\.NETFramework\v4.0\System.Xml.dll" /reference:"C:\Program Files (x86)\Refer
+  ence Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.Linq.dll" /
+  debug:pdbonly /filealign:512 /optimize+ /out:obj\x86\Release\Raven.Sample.Sha
+  rdClient.exe /target:exe ..\..\CommonAssemblyInfo.cs Company.cs Invoice.cs In
+  voicesAmountByDate.cs Program.cs "C:\Users\rg\AppData\Local\Temp\.NETFramewor
+  k,Version=v4.0.AssemblyAttributes.cs"
+_CopyAppConfigFile:
+  Copying file from "app.config" to "C:\devgit\ravendb\build\\Raven.Sample.Shar
+  dClient.exe.config".
+CopyFilesToOutputDirectory:
+  Copying file from "obj\x86\Release\Raven.Sample.ShardClient.exe" to "C:\devgi
+  t\ravendb\build\\Raven.Sample.ShardClient.exe".
+  Raven.Sample.ShardClient -> C:\devgit\ravendb\build\Raven.Sample.ShardClient.
+  exe
+  Copying file from "obj\x86\Release\Raven.Sample.ShardClient.pdb" to "C:\devgi
+  t\ravendb\build\\Raven.Sample.ShardClient.pdb".
+StyleCop:
+  Excluding
+  No violations encountered
+Done Building Project "C:\devgit\ravendb\Samples\Raven.Sample.ShardClient\Raven
+.Sample.ShardClient.csproj" (default targets).
+
+Project "C:\devgit\ravendb\zzz_RavenDB_Release.sln" (1) is building "C:\devgit\
+ravendb\Samples\Raven.Sample.SimpleClient\Raven.Sample.SimpleClient.csproj" (30
+) on node 1 (default targets).
+GenerateTargetFrameworkMonikerAttribute:
+Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output fi
+les are up-to-date with respect to the input files.
+CoreCompile:
+  c:\Windows\Microsoft.NET\Framework\v4.0.30319\Csc.exe /noconfig /nowarn:"1591
+   1573",1701,1702 /nostdlib+ /platform:x86 /errorreport:prompt /warn:4 /define
+  :TRACE /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Fram
+  ework\.NETFramework\v4.0\Microsoft.CSharp.dll" /reference:"C:\Program Files (
+  x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\mscorlib.dll
+  " /reference:C:\devgit\ravendb\build\Raven.Abstractions.dll /reference:C:\dev
+  git\ravendb\build\Raven.Client.Lightweight.dll /reference:"C:\Program Files (
+  x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.
+  dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framew
+  ork\.NETFramework\v4.0\System.Data.DataSetExtensions.dll" /reference:"C:\Prog
+  ram Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\S
+  ystem.Data.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Micro
+  soft\Framework\.NETFramework\v4.0\System.dll" /reference:"C:\Program Files (x
+  86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dl
+  l" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framewor
+  k\.NETFramework\v4.0\System.Xml.Linq.dll" /debug:pdbonly /filealign:512 /opti
+  mize+ /out:obj\x86\Release\Raven.Sample.SimpleClient.exe /target:exe ..\..\Co
+  mmonAssemblyInfo.cs Company.cs Program.cs "C:\Users\rg\AppData\Local\Temp\.NE
+  TFramework,Version=v4.0.AssemblyAttributes.cs"
+_CopyAppConfigFile:
+  Copying file from "app.config" to "C:\devgit\ravendb\build\\Raven.Sample.Simp
+  leClient.exe.config".
+CopyFilesToOutputDirectory:
+  Copying file from "obj\x86\Release\Raven.Sample.SimpleClient.exe" to "C:\devg
+  it\ravendb\build\\Raven.Sample.SimpleClient.exe".
+  Raven.Sample.SimpleClient -> C:\devgit\ravendb\build\Raven.Sample.SimpleClien
+  t.exe
+  Copying file from "obj\x86\Release\Raven.Sample.SimpleClient.pdb" to "C:\devg
+  it\ravendb\build\\Raven.Sample.SimpleClient.pdb".
+StyleCop:
+  Excluding
+  No violations encountered
+Done Building Project "C:\devgit\ravendb\Samples\Raven.Sample.SimpleClient\Rave
+n.Sample.SimpleClient.csproj" (default targets).
+
+Project "C:\devgit\ravendb\zzz_RavenDB_Release.sln" (1) is building "C:\devgit\
+ravendb\Samples\Raven.Samples.Includes\Raven.Samples.Includes.csproj" (31) on n
+ode 1 (default targets).
+ResolveAssemblyReferences:
+  A TargetFramework profile exclusion list will be generated.
+GenerateTargetFrameworkMonikerAttribute:
+Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output fi
+les are up-to-date with respect to the input files.
+CoreCompile:
+  c:\Windows\Microsoft.NET\Framework\v4.0.30319\Csc.exe /noconfig /nowarn:"1591
+   1573",1701,1702 /nostdlib+ /platform:x86 /errorreport:prompt /warn:4 /define
+  :TRACE /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Fram
+  ework\.NETFramework\v4.0\Profile\Client\Microsoft.CSharp.dll" /reference:"C:\
+  Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4
+  .0\Profile\Client\mscorlib.dll" /reference:C:\devgit\ravendb\build\Raven.Abst
+  ractions.dll /reference:C:\devgit\ravendb\build\Raven.Client.Lightweight.dll
+  /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.
+  NETFramework\v4.0\Profile\Client\System.ComponentModel.Composition.dll" /refe
+  rence:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFr
+  amework\v4.0\Profile\Client\System.ComponentModel.DataAnnotations.dll" /refer
+  ence:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFra
+  mework\v4.0\Profile\Client\System.Core.dll" /reference:"C:\Program Files (x86
+  )\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Profile\Client\
+  System.Data.DataSetExtensions.dll" /reference:"C:\Program Files (x86)\Referen
+  ce Assemblies\Microsoft\Framework\.NETFramework\v4.0\Profile\Client\System.Da
+  ta.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Fra
+  mework\.NETFramework\v4.0\Profile\Client\System.dll" /reference:"C:\Program F
+  iles (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Profil
+  e\Client\System.Xml.dll" /reference:"C:\Program Files (x86)\Reference Assembl
+  ies\Microsoft\Framework\.NETFramework\v4.0\Profile\Client\System.Xml.Linq.dll
+  " /debug:pdbonly /filealign:512 /optimize+ /out:obj\x86\Release\Raven.Samples
+  .Includes.exe /target:exe ..\..\CommonAssemblyInfo.cs Companies_ByRegion.cs C
+  ompany.cs Program.cs "C:\Users\rg\AppData\Local\Temp\.NETFramework,Version=v4
+  .0,Profile=Client.AssemblyAttributes.cs"
+CopyFilesToOutputDirectory:
+  Copying file from "obj\x86\Release\Raven.Samples.Includes.exe" to "C:\devgit\
+  ravendb\build\\Raven.Samples.Includes.exe".
+  Raven.Samples.Includes -> C:\devgit\ravendb\build\Raven.Samples.Includes.exe
+  Copying file from "obj\x86\Release\Raven.Samples.Includes.pdb" to "C:\devgit\
+  ravendb\build\\Raven.Samples.Includes.pdb".
+StyleCop:
+  Excluding
+  No violations encountered
+Done Building Project "C:\devgit\ravendb\Samples\Raven.Samples.Includes\Raven.S
+amples.Includes.csproj" (default targets).
+
+Project "C:\devgit\ravendb\zzz_RavenDB_Release.sln" (1) is building "C:\devgit\
+ravendb\Samples\Raven.Sample.Suggestions\Raven.Sample.Suggestions.csproj" (34)
+on node 1 (default targets).
+ResolveAssemblyReferences:
+  A TargetFramework profile exclusion list will be generated.
+GenerateTargetFrameworkMonikerAttribute:
+Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output fi
+les are up-to-date with respect to the input files.
+CoreCompile:
+  c:\Windows\Microsoft.NET\Framework\v4.0.30319\Csc.exe /noconfig /nowarn:"1591
+   1573",1701,1702 /nostdlib+ /platform:x86 /errorreport:prompt /warn:4 /define
+  :TRACE /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Fram
+  ework\.NETFramework\v4.0\Profile\Client\Microsoft.CSharp.dll" /reference:"C:\
+  Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4
+  .0\Profile\Client\mscorlib.dll" /reference:C:\devgit\ravendb\build\Raven.Abst
+  ractions.dll /reference:C:\devgit\ravendb\build\Raven.Client.Lightweight.dll
+  /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.
+  NETFramework\v4.0\Profile\Client\System.ComponentModel.Composition.dll" /refe
+  rence:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFr
+  amework\v4.0\Profile\Client\System.Core.dll" /reference:"C:\Program Files (x8
+  6)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Profile\Client
+  \System.Data.DataSetExtensions.dll" /reference:"C:\Program Files (x86)\Refere
+  nce Assemblies\Microsoft\Framework\.NETFramework\v4.0\Profile\Client\System.D
+  ata.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Fr
+  amework\.NETFramework\v4.0\Profile\Client\System.dll" /reference:"C:\Program
+  Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Profi
+  le\Client\System.Xml.dll" /reference:"C:\Program Files (x86)\Reference Assemb
+  lies\Microsoft\Framework\.NETFramework\v4.0\Profile\Client\System.Xml.Linq.dl
+  l" /debug:pdbonly /filealign:512 /optimize+ /out:obj\x86\Release\Raven.Sample
+  .Suggestions.exe /target:exe ..\..\CommonAssemblyInfo.cs Program.cs "C:\Users
+  \rg\AppData\Local\Temp\.NETFramework,Version=v4.0,Profile=Client.AssemblyAttr
+  ibutes.cs"
+CopyFilesToOutputDirectory:
+  Copying file from "obj\x86\Release\Raven.Sample.Suggestions.exe" to "C:\devgi
+  t\ravendb\build\\Raven.Sample.Suggestions.exe".
+  Raven.Sample.Suggestions -> C:\devgit\ravendb\build\Raven.Sample.Suggestions.
+  exe
+  Copying file from "obj\x86\Release\Raven.Sample.Suggestions.pdb" to "C:\devgi
+  t\ravendb\build\\Raven.Sample.Suggestions.pdb".
+StyleCop:
+  Excluding
+  No violations encountered
+Done Building Project "C:\devgit\ravendb\Samples\Raven.Sample.Suggestions\Raven
+.Sample.Suggestions.csproj" (default targets).
+
+Project "C:\devgit\ravendb\zzz_RavenDB_Release.sln" (1) is building "C:\devgit\
+ravendb\Bundles\Raven.Client.UniqueConstraints\Raven.Client.UniqueConstraints.c
+sproj" (37) on node 1 (default targets).
+GenerateTargetFrameworkMonikerAttribute:
+Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output fi
+les are up-to-date with respect to the input files.
+CoreCompile:
+  c:\Windows\Microsoft.NET\Framework\v4.0.30319\Csc.exe /noconfig /nowarn:"1591
+   1573",1701,1702 /nostdlib+ /errorreport:prompt /warn:4 /define:TRACE /refere
+  nce:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFram
+  ework\v4.0\Microsoft.CSharp.dll" /reference:"C:\Program Files (x86)\Reference
+   Assemblies\Microsoft\Framework\.NETFramework\v4.0\mscorlib.dll" /reference:C
+  :\devgit\ravendb\build\Raven.Abstractions.dll /reference:C:\devgit\ravendb\bu
+  ild\Raven.Client.Lightweight.dll /reference:"C:\Program Files (x86)\Reference
+   Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" /referenc
+  e:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramew
+  ork\v4.0\System.Data.DataSetExtensions.dll" /reference:"C:\Program Files (x86
+  )\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll
+  " /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework
+  \.NETFramework\v4.0\System.dll" /reference:"C:\Program Files (x86)\Reference
+  Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /reference:
+  "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramewor
+  k\v4.0\System.Xml.Linq.dll" /debug:pdbonly /filealign:512 /optimize+ /out:obj
+  \Release\Raven.Client.UniqueConstraints.dll /target:library ..\..\CommonAssem
+  blyInfo.cs ..\Raven.Bundles.UniqueConstraints\Constants.cs ..\Raven.Bundles.U
+  niqueConstraints\Util.cs UniqueConstraintAttribte.cs UniqueConstraintExtensio
+  ns.cs UniqueConstraintsStoreListener.cs UniqueConstraintsTypeDictionary.cs "C
+  :\Users\rg\AppData\Local\Temp\.NETFramework,Version=v4.0.AssemblyAttributes.c
+  s"
+CopyFilesToOutputDirectory:
+  Copying file from "obj\Release\Raven.Client.UniqueConstraints.dll" to "C:\dev
+  git\ravendb\build\\Raven.Client.UniqueConstraints.dll".
+  Raven.Client.UniqueConstraints -> C:\devgit\ravendb\build\Raven.Client.Unique
+  Constraints.dll
+  Copying file from "obj\Release\Raven.Client.UniqueConstraints.pdb" to "C:\dev
+  git\ravendb\build\\Raven.Client.UniqueConstraints.pdb".
+Done Building Project "C:\devgit\ravendb\Bundles\Raven.Client.UniqueConstraints
+\Raven.Client.UniqueConstraints.csproj" (default targets).
+
+Project "C:\devgit\ravendb\zzz_RavenDB_Release.sln" (1) is building "C:\devgit\
+ravendb\Bundles\Raven.Client.Authorization\Raven.Client.Authorization.csproj" (
+38) on node 1 (default targets).
+GenerateTargetFrameworkMonikerAttribute:
+Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output fi
+les are up-to-date with respect to the input files.
+CoreCompile:
+  c:\Windows\Microsoft.NET\Framework\v4.0.30319\Csc.exe /noconfig /nowarn:"1591
+   1573",1701,1702 /nostdlib+ /errorreport:prompt /warn:4 /define:TRACE /refere
+  nce:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFram
+  ework\v4.0\Microsoft.CSharp.dll" /reference:"C:\Program Files (x86)\Reference
+   Assemblies\Microsoft\Framework\.NETFramework\v4.0\mscorlib.dll" /reference:C
+  :\devgit\ravendb\build\Raven.Abstractions.dll /reference:C:\devgit\ravendb\bu
+  ild\Raven.Client.Lightweight.dll /reference:"C:\Program Files (x86)\Reference
+   Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" /referenc
+  e:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramew
+  ork\v4.0\System.Data.DataSetExtensions.dll" /reference:"C:\Program Files (x86
+  )\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll
+  " /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework
+  \.NETFramework\v4.0\System.dll" /reference:"C:\Program Files (x86)\Reference
+  Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /reference:
+  "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramewor
+  k\v4.0\System.Xml.Linq.dll" /debug:pdbonly /filealign:512 /keyfile:..\..\Rave
+  n.Database\RavenDB.snk /optimize+ /out:obj\Release\Raven.Client.Authorization
+  .dll /target:library ..\..\CommonAssemblyInfo.cs ..\Raven.Bundles.Authorizati
+  on\Constants.cs ..\Raven.Bundles.Authorization\Model\AuthorizationRole.cs ..\
+  Raven.Bundles.Authorization\Model\AuthorizationUser.cs ..\Raven.Bundles.Autho
+  rization\Model\DocumentAuthorization.cs ..\Raven.Bundles.Authorization\Model\
+  DocumentPermission.cs ..\Raven.Bundles.Authorization\Model\IPermission.cs ..\
+  Raven.Bundles.Authorization\Model\OperationPermission.cs ..\Raven.Bundles.Aut
+  horization\OperationAllowedResult.cs AuthorizationClientExtensions.cs "C:\Use
+  rs\rg\AppData\Local\Temp\.NETFramework,Version=v4.0.AssemblyAttributes.cs"
+CopyFilesToOutputDirectory:
+  Copying file from "obj\Release\Raven.Client.Authorization.dll" to "C:\devgit\
+  ravendb\build\\Raven.Client.Authorization.dll".
+  Raven.Client.Authorization -> C:\devgit\ravendb\build\Raven.Client.Authorizat
+  ion.dll
+  Copying file from "obj\Release\Raven.Client.Authorization.pdb" to "C:\devgit\
+  ravendb\build\\Raven.Client.Authorization.pdb".
+StyleCop:
+  Excluding
+  No violations encountered
+Done Building Project "C:\devgit\ravendb\Bundles\Raven.Client.Authorization\Rav
+en.Client.Authorization.csproj" (default targets).
+
+Project "C:\devgit\ravendb\zzz_RavenDB_Release.sln" (1) is building "C:\devgit\
+ravendb\Bundles\Raven.Bundles.Tryouts\Raven.Bundles.Tryouts.csproj" (40) on nod
+e 1 (default targets).
+Project "C:\devgit\ravendb\Bundles\Raven.Bundles.Tryouts\Raven.Bundles.Tryouts.
+csproj" (40) is building "C:\devgit\ravendb\Bundles\Raven.Bundles.Tests\Raven.B
+undles.Tests.csproj" (41) on node 1 (default targets).
+RestorePackages:
+  "C:\devgit\ravendb\.nuget\nuget.exe" install "C:\devgit\ravendb\Bundles\Raven
+  .Bundles.Tests\packages.config" -source ""  -RequireConsent -o "C:\devgit\rav
+  endb\packages"
+C:\devgit\ravendb\.nuget\nuget.targets(90,9): error : Package restore is disabl
+ed by default. To give consent, open the Visual Studio Options dialog, click on
+ Package Manager node and check 'Allow NuGet to download missing packages durin
+g build.' You can also give consent by setting the environment variable 'Enable
+NuGetPackageRestore' to 'true'. [C:\devgit\ravendb\Bundles\Raven.Bundles.Tests\
+Raven.Bundles.Tests.csproj]
+C:\devgit\ravendb\.nuget\nuget.targets(90,9): error MSB3073: The command ""C:\d
+evgit\ravendb\.nuget\nuget.exe" install "C:\devgit\ravendb\Bundles\Raven.Bundle
+s.Tests\packages.config" -source ""  -RequireConsent -o "C:\devgit\ravendb\pack
+ages"" exited with code 1. [C:\devgit\ravendb\Bundles\Raven.Bundles.Tests\Raven
+.Bundles.Tests.csproj]
+Done Building Project "C:\devgit\ravendb\Bundles\Raven.Bundles.Tests\Raven.Bund
+les.Tests.csproj" (default targets) -- FAILED.
+
+Done Building Project "C:\devgit\ravendb\Bundles\Raven.Bundles.Tryouts\Raven.Bu
+ndles.Tryouts.csproj" (default targets) -- FAILED.
+
+Project "C:\devgit\ravendb\zzz_RavenDB_Release.sln" (1) is building "C:\devgit\
+ravendb\Samples\Raven.Sample.MvcIntegration\Raven.Sample.MvcIntegration.csproj"
+ (42) on node 1 (default targets).
+RestorePackages:
+  "C:\devgit\ravendb\.nuget\nuget.exe" install "C:\devgit\ravendb\Samples\Raven
+  .Sample.MvcIntegration\packages.config" -source ""  -RequireConsent -o "C:\de
+  vgit\ravendb\packages"
+C:\devgit\ravendb\.nuget\nuget.targets(90,9): error : Package restore is disabl
+ed by default. To give consent, open the Visual Studio Options dialog, click on
+ Package Manager node and check 'Allow NuGet to download missing packages durin
+g build.' You can also give consent by setting the environment variable 'Enable
+NuGetPackageRestore' to 'true'. [C:\devgit\ravendb\Samples\Raven.Sample.MvcInte
+gration\Raven.Sample.MvcIntegration.csproj]
+C:\devgit\ravendb\.nuget\nuget.targets(90,9): error MSB3073: The command ""C:\d
+evgit\ravendb\.nuget\nuget.exe" install "C:\devgit\ravendb\Samples\Raven.Sample
+.MvcIntegration\packages.config" -source ""  -RequireConsent -o "C:\devgit\rave
+ndb\packages"" exited with code 1. [C:\devgit\ravendb\Samples\Raven.Sample.MvcI
+ntegration\Raven.Sample.MvcIntegration.csproj]
+Done Building Project "C:\devgit\ravendb\Samples\Raven.Sample.MvcIntegration\Ra
+ven.Sample.MvcIntegration.csproj" (default targets) -- FAILED.
+
+Done Building Project "C:\devgit\ravendb\zzz_RavenDB_Release.sln" (default targ
+ets) -- FAILED.
+
+
+Build FAILED.
+
+"C:\devgit\ravendb\zzz_RavenDB_Release.sln" (default target) (1) ->
+"C:\devgit\ravendb\Raven.Server\Raven.Server.csproj" (default target) (2) ->
+"C:\devgit\ravendb\Raven.Abstractions\Raven.Abstractions.csproj" (default targe
+t) (4) ->
+(CoreCompile target) ->
+  Json\Linq\RavenJTokenEqualityComparer.cs(39,15): warning CS0108: 'Raven.Json.
+Linq.RavenJTokenEqualityComparer.Equals(object, object)' hides inherited member
+ 'object.Equals(object, object)'. Use the new keyword if hiding was intended. [
+C:\devgit\ravendb\Raven.Abstractions\Raven.Abstractions.csproj]
+  Json\Linq\RavenJObject.cs(23,37): warning CS3008: Identifier 'Raven.Json.Linq
+.RavenJObject.__ExternalState' is not CLS-compliant [C:\devgit\ravendb\Raven.Ab
+stractions\Raven.Abstractions.csproj]
+
+
+"C:\devgit\ravendb\zzz_RavenDB_Release.sln" (default target) (1) ->
+"C:\devgit\ravendb\Raven.Client.Silverlight\Raven.Client.Silverlight.g.4.csproj
+" (default target) (18) ->
+  c:\devgit\ravendb\Raven.Abstractions\Json\Linq\RavenJTokenEqualityComparer.cs
+(39,15): warning CS0108: 'Raven.Json.Linq.RavenJTokenEqualityComparer.Equals(ob
+ject, object)' hides inherited member 'object.Equals(object, object)'. Use the
+new keyword if hiding was intended. [C:\devgit\ravendb\Raven.Client.Silverlight
+\Raven.Client.Silverlight.g.4.csproj]
+  c:\devgit\ravendb\Raven.Client.Lightweight\Connection\Async\AsyncServerClient
+.cs(367,43): warning CS1574: XML comment on 'Raven.Client.Connection.Async.Asyn
+cServerClient.ForDatabase(string)' has cref attribute 'IDatabaseCommands' that
+could not be resolved [C:\devgit\ravendb\Raven.Client.Silverlight\Raven.Client.
+Silverlight.g.4.csproj]
+  c:\devgit\ravendb\Raven.Client.Lightweight\Connection\Async\AsyncServerClient
+.cs(383,43): warning CS1574: XML comment on 'Raven.Client.Connection.Async.Asyn
+cServerClient.ForSystemDatabase()' has cref attribute 'IDatabaseCommands' that
+could not be resolved [C:\devgit\ravendb\Raven.Client.Silverlight\Raven.Client.
+Silverlight.g.4.csproj]
+  c:\devgit\ravendb\Raven.Client.Lightweight\Connection\CachedRequest.cs(14,25)
+: warning CS0649: Field 'Raven.Client.Connection.CachedRequest.Time' is never a
+ssigned to, and will always have its default value [C:\devgit\ravendb\Raven.Cli
+ent.Silverlight\Raven.Client.Silverlight.g.4.csproj]
+  c:\devgit\ravendb\Raven.Client.Lightweight\Connection\CachedRequest.cs(15,30)
+: warning CS0649: Field 'Raven.Client.Connection.CachedRequest.Headers' is neve
+r assigned to, and will always have its default value null [C:\devgit\ravendb\R
+aven.Client.Silverlight\Raven.Client.Silverlight.g.4.csproj]
+  c:\devgit\ravendb\Raven.Client.Lightweight\Connection\CachedRequest.cs(20,24)
+: warning CS0649: Field 'Raven.Client.Connection.CachedRequestOp.CachedRequest'
+ is never assigned to, and will always have its default value null [C:\devgit\r
+avendb\Raven.Client.Silverlight\Raven.Client.Silverlight.g.4.csproj]
+  c:\devgit\ravendb\Raven.Client.Lightweight\Connection\CachedRequest.cs(21,15)
+: warning CS0649: Field 'Raven.Client.Connection.CachedRequestOp.SkipServerChec
+k' is never assigned to, and will always have its default value false [C:\devgi
+t\ravendb\Raven.Client.Silverlight\Raven.Client.Silverlight.g.4.csproj]
+  c:\devgit\ravendb\Raven.Client.Lightweight\Util\SimpleCache.cs(27,23): warnin
+g CS0169: The field 'Raven.Client.Util.SimpleCache<T>.failedToGetAvailablePhysi
+calMemory' is never used [C:\devgit\ravendb\Raven.Client.Silverlight\Raven.Clie
+nt.Silverlight.g.4.csproj]
+  c:\devgit\ravendb\Raven.Client.Lightweight\Document\DocumentStore.cs(49,15):
+warning CS0414: The field 'Raven.Client.Document.DocumentStore.maxNumberOfCache
+dRequests' is assigned but its value is never used [C:\devgit\ravendb\Raven.Cli
+ent.Silverlight\Raven.Client.Silverlight.g.4.csproj]
+
+
+"C:\devgit\ravendb\zzz_RavenDB_Release.sln" (default target) (1) ->
+"C:\devgit\ravendb\Raven.Server\Raven.Server.csproj" (default target) (2) ->
+"C:\devgit\ravendb\Raven.Database\Raven.Database.csproj" (default target) (5) -
+>
+"C:\devgit\ravendb\Raven.Studio\Raven.Studio.csproj" (default target) (6) ->
+  C:\devgit\ravendb\Raven.Studio\Raven.Studio.csproj(1275,3): error MSB4019: Th
+e imported project "C:\Program Files (x86)\MSBuild\Microsoft\Silverlight\v5.0\M
+icrosoft.Silverlight.CSharp.targets" was not found. Confirm that the path in th
+e <Import> declaration is correct, and that the file exists on disk.
+
+
+"C:\devgit\ravendb\zzz_RavenDB_Release.sln" (default target) (1) ->
+"C:\devgit\ravendb\Raven.Tests\Raven.Tests.csproj" (default target) (7) ->
+(RestorePackages target) ->
+  C:\devgit\ravendb\.nuget\nuget.targets(90,9): error : Package restore is disa
+bled by default. To give consent, open the Visual Studio Options dialog, click
+on Package Manager node and check 'Allow NuGet to download missing packages dur
+ing build.' You can also give consent by setting the environment variable 'Enab
+leNuGetPackageRestore' to 'true'. [C:\devgit\ravendb\Raven.Tests\Raven.Tests.cs
+proj]
+  C:\devgit\ravendb\.nuget\nuget.targets(90,9): error MSB3073: The command ""C:
+\devgit\ravendb\.nuget\nuget.exe" install "C:\devgit\ravendb\Raven.Tests\packag
+es.config" -source ""  -RequireConsent -o "C:\devgit\ravendb\packages"" exited
+with code 1. [C:\devgit\ravendb\Raven.Tests\Raven.Tests.csproj]
+
+
+"C:\devgit\ravendb\zzz_RavenDB_Release.sln" (default target) (1) ->
+"C:\devgit\ravendb\Raven.Tryouts\Raven.Tryouts.csproj" (default target) (10) ->
+"C:\devgit\ravendb\Raven.Tests.Helpers\Raven.Tests.Helpers.csproj" (default tar
+get) (12) ->
+  C:\devgit\ravendb\.nuget\nuget.targets(90,9): error : Package restore is disa
+bled by default. To give consent, open the Visual Studio Options dialog, click
+on Package Manager node and check 'Allow NuGet to download missing packages dur
+ing build.' You can also give consent by setting the environment variable 'Enab
+leNuGetPackageRestore' to 'true'. [C:\devgit\ravendb\Raven.Tests.Helpers\Raven.
+Tests.Helpers.csproj]
+  C:\devgit\ravendb\.nuget\nuget.targets(90,9): error MSB3073: The command ""C:
+\devgit\ravendb\.nuget\nuget.exe" install "C:\devgit\ravendb\Raven.Tests.Helper
+s\packages.config" -source ""  -RequireConsent -o "C:\devgit\ravendb\packages""
+ exited with code 1. [C:\devgit\ravendb\Raven.Tests.Helpers\Raven.Tests.Helpers
+.csproj]
+
+
+"C:\devgit\ravendb\zzz_RavenDB_Release.sln" (default target) (1) ->
+"C:\devgit\ravendb\Raven.Client.Silverlight\Raven.Client.Silverlight.csproj" (d
+efault target) (14) ->
+  C:\devgit\ravendb\Raven.Client.Silverlight\Raven.Client.Silverlight.csproj(14
+55,3): error MSB4019: The imported project "C:\Program Files (x86)\MSBuild\Micr
+osoft\Silverlight\v5.0\Microsoft.Silverlight.CSharp.targets" was not found. Con
+firm that the path in the <Import> declaration is correct, and that the file ex
+ists on disk.
+
+
+"C:\devgit\ravendb\zzz_RavenDB_Release.sln" (default target) (1) ->
+"C:\devgit\ravendb\Raven.Tests.Silverlight\Raven.Tests.Silverlight.csproj" (def
+ault target) (15) ->
+  C:\devgit\ravendb\Raven.Tests.Silverlight\Raven.Tests.Silverlight.csproj(159,
+3): error MSB4019: The imported project "C:\Program Files (x86)\MSBuild\Microso
+ft\Silverlight\v5.0\Microsoft.Silverlight.CSharp.targets" was not found. Confir
+m that the path in the <Import> declaration is correct, and that the file exist
+s on disk.
+
+
+"C:\devgit\ravendb\zzz_RavenDB_Release.sln" (default target) (1) ->
+"C:\devgit\ravendb\Raven.Client.MvcIntegration\Raven.Client.MvcIntegration.cspr
+oj" (default target) (16) ->
+(RestorePackages target) ->
+  C:\devgit\ravendb\.nuget\nuget.targets(90,9): error : Package restore is disa
+bled by default. To give consent, open the Visual Studio Options dialog, click
+on Package Manager node and check 'Allow NuGet to download missing packages dur
+ing build.' You can also give consent by setting the environment variable 'Enab
+leNuGetPackageRestore' to 'true'. [C:\devgit\ravendb\Raven.Client.MvcIntegratio
+n\Raven.Client.MvcIntegration.csproj]
+  C:\devgit\ravendb\.nuget\nuget.targets(90,9): error MSB3073: The command ""C:
+\devgit\ravendb\.nuget\nuget.exe" install "C:\devgit\ravendb\Raven.Client.MvcIn
+tegration\packages.config" -source ""  -RequireConsent -o "C:\devgit\ravendb\pa
+ckages"" exited with code 1. [C:\devgit\ravendb\Raven.Client.MvcIntegration\Rav
+en.Client.MvcIntegration.csproj]
+
+
+"C:\devgit\ravendb\zzz_RavenDB_Release.sln" (default target) (1) ->
+"C:\devgit\ravendb\Raven.StressTests\Raven.StressTests.csproj" (default target)
+ (20) ->
+  C:\devgit\ravendb\.nuget\nuget.targets(90,9): error : Package restore is disa
+bled by default. To give consent, open the Visual Studio Options dialog, click
+on Package Manager node and check 'Allow NuGet to download missing packages dur
+ing build.' You can also give consent by setting the environment variable 'Enab
+leNuGetPackageRestore' to 'true'. [C:\devgit\ravendb\Raven.StressTests\Raven.St
+ressTests.csproj]
+  C:\devgit\ravendb\.nuget\nuget.targets(90,9): error MSB3073: The command ""C:
+\devgit\ravendb\.nuget\nuget.exe" install "C:\devgit\ravendb\Raven.StressTests\
+packages.config" -source ""  -RequireConsent -o "C:\devgit\ravendb\packages"" e
+xited with code 1. [C:\devgit\ravendb\Raven.StressTests\Raven.StressTests.cspro
+j]
+
+
+"C:\devgit\ravendb\zzz_RavenDB_Release.sln" (default target) (1) ->
+"C:\devgit\ravendb\Samples\Raven.Sample.Failover\Raven.Sample.Failover.csproj"
+(default target) (23) ->
+  C:\devgit\ravendb\.nuget\nuget.targets(90,9): error : Package restore is disa
+bled by default. To give consent, open the Visual Studio Options dialog, click
+on Package Manager node and check 'Allow NuGet to download missing packages dur
+ing build.' You can also give consent by setting the environment variable 'Enab
+leNuGetPackageRestore' to 'true'. [C:\devgit\ravendb\Samples\Raven.Sample.Failo
+ver\Raven.Sample.Failover.csproj]
+  C:\devgit\ravendb\.nuget\nuget.targets(90,9): error MSB3073: The command ""C:
+\devgit\ravendb\.nuget\nuget.exe" install "C:\devgit\ravendb\Samples\Raven.Samp
+le.Failover\packages.config" -source ""  -RequireConsent -o "C:\devgit\ravendb\
+packages"" exited with code 1. [C:\devgit\ravendb\Samples\Raven.Sample.Failover
+\Raven.Sample.Failover.csproj]
+
+
+"C:\devgit\ravendb\zzz_RavenDB_Release.sln" (default target) (1) ->
+"C:\devgit\ravendb\Bundles\Raven.Bundles.Tryouts\Raven.Bundles.Tryouts.csproj"
+(default target) (40) ->
+"C:\devgit\ravendb\Bundles\Raven.Bundles.Tests\Raven.Bundles.Tests.csproj" (def
+ault target) (41) ->
+  C:\devgit\ravendb\.nuget\nuget.targets(90,9): error : Package restore is disa
+bled by default. To give consent, open the Visual Studio Options dialog, click
+on Package Manager node and check 'Allow NuGet to download missing packages dur
+ing build.' You can also give consent by setting the environment variable 'Enab
+leNuGetPackageRestore' to 'true'. [C:\devgit\ravendb\Bundles\Raven.Bundles.Test
+s\Raven.Bundles.Tests.csproj]
+  C:\devgit\ravendb\.nuget\nuget.targets(90,9): error MSB3073: The command ""C:
+\devgit\ravendb\.nuget\nuget.exe" install "C:\devgit\ravendb\Bundles\Raven.Bund
+les.Tests\packages.config" -source ""  -RequireConsent -o "C:\devgit\ravendb\pa
+ckages"" exited with code 1. [C:\devgit\ravendb\Bundles\Raven.Bundles.Tests\Rav
+en.Bundles.Tests.csproj]
+
+
+"C:\devgit\ravendb\zzz_RavenDB_Release.sln" (default target) (1) ->
+"C:\devgit\ravendb\Samples\Raven.Sample.MvcIntegration\Raven.Sample.MvcIntegrat
+ion.csproj" (default target) (42) ->
+  C:\devgit\ravendb\.nuget\nuget.targets(90,9): error : Package restore is disa
+bled by default. To give consent, open the Visual Studio Options dialog, click
+on Package Manager node and check 'Allow NuGet to download missing packages dur
+ing build.' You can also give consent by setting the environment variable 'Enab
+leNuGetPackageRestore' to 'true'. [C:\devgit\ravendb\Samples\Raven.Sample.MvcIn
+tegration\Raven.Sample.MvcIntegration.csproj]
+  C:\devgit\ravendb\.nuget\nuget.targets(90,9): error MSB3073: The command ""C:
+\devgit\ravendb\.nuget\nuget.exe" install "C:\devgit\ravendb\Samples\Raven.Samp
+le.MvcIntegration\packages.config" -source ""  -RequireConsent -o "C:\devgit\ra
+vendb\packages"" exited with code 1. [C:\devgit\ravendb\Samples\Raven.Sample.Mv
+cIntegration\Raven.Sample.MvcIntegration.csproj]
+
+    11 Warning(s)
+    17 Error(s)
+
+Time Elapsed 00:00:19.56
+2013-02-10 09:22:20: An Error Occurred:
+Exec: Error executing command  &"C:\Windows\Microsoft.NET\Framework\$v4_net_ver
+sion\MSBuild.exe" "$sln_file" /p:OutDir="$buildartifacts_dir\" /p:Configuration
+=$global:configuration /p:nowarn="1591 1573" .
+At C:\devgit\ravendb\packages\psake.4.2.0.1\tools\psake.psm1:139 char:14
++         throw <<<<  ("Exec: " + $errorMessage)
+    + CategoryInfo          : OperationStopped: (Exec: Error exe...n="1591 157
+   3" .:String) [], RuntimeException
+    + FullyQualifiedErrorId : Exec: Error executing command  &"C:\Windows\Micr
+   osoft.NET\Framework\$v4_net_version\MSBuild.exe" "$sln_file" /p:OutDir="$b
+  uildartifacts_dir\" /p:Configuration=$global:configuration /p:nowarn="1591
+  1573" .
