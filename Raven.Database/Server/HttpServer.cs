@@ -93,7 +93,7 @@ namespace Raven.Database.Server
 		private HttpListener listener;
 
 		private static readonly ILog logger = LogManager.GetCurrentClassLogger();
-
+		private static readonly ILog statLog = LogManager.GetLogger("PERFM.HttpServer");
 		private int reqNum;
 
 
@@ -573,7 +573,7 @@ namespace Raven.Database.Server
 			}
 			catch (Exception e2)
 			{
-				logger.ErrorException("Could not finalize request properly", e2);
+				logger.ErrorException("Could not finalize request properly: {0}", e2);
 			}
 		}
 
@@ -676,6 +676,9 @@ namespace Raven.Database.Server
 				return;
 
 			var curReq = Interlocked.Increment(ref reqNum);
+			int idx = logHttpRequestStatsParams.RequestUri.IndexOf('?');
+			string ur = idx < 0 ? logHttpRequestStatsParams.RequestUri : logHttpRequestStatsParams.RequestUri.Substring(0, idx);
+			statLog.Info("{0}_{1}:{2}", logHttpRequestStatsParams.HttpMethod, ur, (int) logHttpRequestStatsParams.Stopwatch.ElapsedMilliseconds);
 			logger.Debug("Request #{0,4:#,0}: {1,-7} - {2,5:#,0} ms - {5,-10} - {3} - {4}",
 							   curReq,
 							   logHttpRequestStatsParams.HttpMethod,
@@ -683,6 +686,7 @@ namespace Raven.Database.Server
 							   logHttpRequestStatsParams.ResponseStatusCode,
 							   logHttpRequestStatsParams.RequestUri,
 							   currentTenantId.Value);
+			
 		}
 
 		private void HandleException(IHttpContext ctx, Exception e)

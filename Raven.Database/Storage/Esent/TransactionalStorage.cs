@@ -541,7 +541,7 @@ namespace Raven.Storage.Esent
 				if (disposed == false)
 					current.Value = null;
 				sw.Stop();
-				statLog.Info("Batch:{0}", sw.ElapsedMilliseconds);
+				statLog.Info("BatchT:{0}", sw.ElapsedTicks);
 			}
 			if (afterStorageCommit != null)
 				afterStorageCommit(); 
